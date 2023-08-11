@@ -25,10 +25,10 @@ clk = 0;
 end
 
 always 
-#3 clk=~clk;
+#5 clk=~clk;
 
 always 
-#5 d=~d;
+#8 d=~d;
 
 
 endmodule

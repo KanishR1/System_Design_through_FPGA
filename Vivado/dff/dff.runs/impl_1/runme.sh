@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/kanish/Vivado/dff/dff.runs/impl_1'
+HD_PWD='/home/kanish/System_Design_through_FPGA/Vivado/dff/dff.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,7 +38,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log dflipflop.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dflipflop.tcl -notrace
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date         : Thu Aug 10 19:16:19 2023
+| Date         : Fri Aug 11 13:09:51 2023
 | Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_methodology -file dflipflop_methodology_drc_routed.rpt -pb dflipflop_methodology_drc_routed.pb -rpx dflipflop_methodology_drc_routed.rpx
 | Design       : dflipflop
@@ -20,21 +20,38 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_dflipflop
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1
-+-----------+------------------+-----------------------------+------------+
-| Rule      | Severity         | Description                 | Violations |
-+-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 1          |
-+-----------+------------------+-----------------------------+------------+
+             Violations found: 3
++--------+----------+------------------------------------------------------+------------+
+| Rule   | Severity | Description                                          | Violations |
++--------+----------+------------------------------------------------------+------------+
+| XDCC-4 | Warning  | User Clock constraint overwritten with the same name | 1          |
+| XDCH-2 | Warning  | Same min and max delay values on IO port             | 2          |
++--------+----------+------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-17#1 Critical Warning
-Non-clocked sequential cell  
-The clock pin q_reg/C is not reached by a timing clock
+XDCC-4#1 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk] (Source: /home/kanish/System_Design_through_FPGA/Vivado/dff/dff.srcs/constrs_1/new/dff_constraints.xdc (Line: 7))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} -add (Source: /home/kanish/System_Design_through_FPGA/Vivado/dff/dff.srcs/constrs_1/new/dff_constraints.xdc (Line: 6))
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'd' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports d]
+/home/kanish/System_Design_through_FPGA/Vivado/dff/dff.srcs/constrs_1/new/dff_constraints.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'q' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports q]
+/home/kanish/System_Design_through_FPGA/Vivado/dff/dff.srcs/constrs_1/new/dff_constraints.xdc (Line: 14)
 Related violations: <none>
 
 

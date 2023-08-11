@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1691675026">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1691739521" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/dflipflop.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="dflipflop_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="dflipflop.dcp"/>
   <File Type="RDS-UTIL-PB" Name="dflipflop_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="dflipflop.tcl"/>
   <File Type="RDS-UTIL" Name="dflipflop_utilization_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="dflipflop_reports.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="dflipflop_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="dflipflop.vds"/>
+  <File Type="REPORTS-TCL" Name="dflipflop_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="dflipflop_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="dflipflop.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/src/dff.v">
@@ -38,6 +41,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/dflipflop.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

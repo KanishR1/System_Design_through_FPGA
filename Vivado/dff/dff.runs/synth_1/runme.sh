@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/kanish/Vivado/dff/dff.runs/synth_1'
+HD_PWD='/home/kanish/System_Design_through_FPGA/Vivado/dff/dff.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
