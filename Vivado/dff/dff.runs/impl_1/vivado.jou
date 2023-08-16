@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Fri Aug 11 13:09:17 2023
-# Process ID: 355623
+# Start of session at: Wed Aug 16 22:03:22 2023
+# Process ID: 113338
 # Current directory: /home/kanish/System_Design_through_FPGA/Vivado/dff/dff.runs/impl_1
 # Command line: vivado -log dflipflop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dflipflop.tcl -notrace
 # Log file: /home/kanish/System_Design_through_FPGA/Vivado/dff/dff.runs/impl_1/dflipflop.vdi
 # Journal file: /home/kanish/System_Design_through_FPGA/Vivado/dff/dff.runs/impl_1/vivado.jou
-# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4393.590 MHz, CPU Physical cores: 4, Host memory: 16544 MB
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4391.488 MHz, CPU Physical cores: 4, Host memory: 8100 MB
 #-----------------------------------------------------------
 source dflipflop.tcl -notrace
