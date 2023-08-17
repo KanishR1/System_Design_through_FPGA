@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/kanish/System_Design_through_FPGA/Vivado/dff2/dff2.srcs/constrs_1/imports/new/constraints.xdc rfile:../../../dff2.srcs/constrs_1/imports/new/constraints.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports clk]
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T1 [get_ports d]
+set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U16 [get_ports q]
