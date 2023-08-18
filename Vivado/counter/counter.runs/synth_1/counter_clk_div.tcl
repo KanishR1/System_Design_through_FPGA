@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 2
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_msg_config -id {Synth 8-256} -limit 10000
@@ -102,6 +103,8 @@ read_xdc /home/kanish/System_Design_through_FPGA/Vivado/counter/counter.srcs/con
 set_property used_in_implementation false [get_files /home/kanish/System_Design_through_FPGA/Vivado/counter/counter.srcs/constrs_1/new/constrainsts.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/kanish/System_Design_through_FPGA/Vivado/counter/counter.srcs/utils_1/imports/synth_1/counter_clk_div.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

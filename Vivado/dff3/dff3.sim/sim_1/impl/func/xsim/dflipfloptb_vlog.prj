@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"dflipfloptb_func_impl.v" \
+"../../../../../dff3.srcs/sources_1/imports/dff1.srcs/sim_1/new/dflipfloptb.v" \
+
+# Do not sort compile order
+nosort

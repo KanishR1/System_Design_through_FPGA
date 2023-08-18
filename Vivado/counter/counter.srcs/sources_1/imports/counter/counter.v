@@ -34,7 +34,8 @@ reg [25:0] delay_count;
 output reg [3:0] counter_out;
 
 //////////clock division block////////////////////
-
+initial 
+div_clk=0;
 
 always @(posedge clk)
 begin
@@ -48,12 +49,12 @@ delay_count<=26'd0;
 //counter_out<=4'b0000;
 end
 
-//else
+else
 //uncomment this line while running just the div clock counter for simulation purpose
 //if(delay_count==26'd212)
 
 //comment this line while running just the div clock counter for simulation purpose
-if(delay_count==26'd32112212)
+if(delay_count==26'd49999999)
 begin
 delay_count<=26'd0; //reset upon reaching the max value
 div_clk <= ~div_clk;  //generating a slow clock
@@ -66,7 +67,7 @@ end
 
 
 /////////////4 bit counter block///////////////////
-always @(posedge div_clk)
+always @(posedge div_clk,  posedge rst)
 begin
 
 if(rst)

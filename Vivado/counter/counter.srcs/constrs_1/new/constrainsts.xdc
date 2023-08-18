@@ -14,9 +14,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {counter_out[0]}]
 create_clock -period 10 -name clk -waveform {0.000 5} -add
 create_clock -period 10 -name clk -waveform {0.000 5} [get_ports clk]
 
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk]
 
-
-set_property DRIVE 12 [get_ports {counter_out[3]}]
-set_property DRIVE 12 [get_ports {counter_out[2]}]
-set_property DRIVE 12 [get_ports {counter_out[1]}]
-set_property DRIVE 12 [get_ports {counter_out[0]}]
+#set_property DRIVE 12 [get_ports {counter_out[3]}]
+#set_property DRIVE 12 [get_ports {counter_out[2]}]
+#set_property DRIVE 12 [get_ports {counter_out[1]}]
+#set_property DRIVE 12 [get_ports {counter_out[0]}]
