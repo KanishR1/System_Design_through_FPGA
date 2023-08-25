@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date         : Fri Aug 25 09:56:09 2023
+| Date         : Fri Aug 25 10:26:48 2023
 | Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_methodology -file mac_methodology_drc_routed.rpt -pb mac_methodology_drc_routed.pb -rpx mac_methodology_drc_routed.rpx
 | Design       : mac
@@ -27,122 +27,163 @@ Table of Contents
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay                        | 21         |
+| TIMING-18 | Warning  | Missing input or output delay                        | 1          |
 | XDCC-4    | Warning  | User Clock constraint overwritten with the same name | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port             | 20         |
 +-----------+----------+------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on a[0] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#2 Warning
-Missing input or output delay  
-An input delay is missing on a[1] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#3 Warning
-Missing input or output delay  
-An input delay is missing on a[2] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#4 Warning
-Missing input or output delay  
-An input delay is missing on a[3] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#5 Warning
-Missing input or output delay  
-An input delay is missing on b[0] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#6 Warning
-Missing input or output delay  
-An input delay is missing on b[1] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#7 Warning
-Missing input or output delay  
-An input delay is missing on b[2] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#8 Warning
-Missing input or output delay  
-An input delay is missing on b[3] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#9 Warning
-Missing input or output delay  
-An input delay is missing on c[0] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#10 Warning
-Missing input or output delay  
-An input delay is missing on c[1] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#11 Warning
-Missing input or output delay  
-An input delay is missing on c[2] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#12 Warning
-Missing input or output delay  
-An input delay is missing on c[3] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#13 Warning
-Missing input or output delay  
 An input delay is missing on reset relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#14 Warning
-Missing input or output delay  
-An output delay is missing on out[0] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#15 Warning
-Missing input or output delay  
-An output delay is missing on out[1] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#16 Warning
-Missing input or output delay  
-An output delay is missing on out[2] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#17 Warning
-Missing input or output delay  
-An output delay is missing on out[3] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#18 Warning
-Missing input or output delay  
-An output delay is missing on out[4] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#19 Warning
-Missing input or output delay  
-An output delay is missing on out[5] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#20 Warning
-Missing input or output delay  
-An output delay is missing on out[6] relative to the rising and/or falling clock edge(s) of clk.
-Related violations: <none>
-
-TIMING-18#21 Warning
-Missing input or output delay  
-An output delay is missing on out[7] relative to the rising and/or falling clock edge(s) of clk.
 Related violations: <none>
 
 XDCC-4#1 Warning
 User Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous user clock constraint with the same name.
-New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk] (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 47))
-Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} -add (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 46))
+New: create_clock -period 10.500 -name clk -waveform {0.000 5.250} [get_ports clk] (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 56))
+Previous: create_clock -period 10.500 -name clk -waveform {0.000 5.250} -add (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 55))
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'a[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {a[0]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 59)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'a[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {a[1]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 61)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'a[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {a[2]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 63)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'a[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {a[3]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 65)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'b[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {b[0]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'b[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {b[1]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 70)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'b[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {b[2]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 72)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'b[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {b[3]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 74)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'c[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {c[0]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 77)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'c[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {c[1]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'c[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {c[2]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 81)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'c[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {c[3]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 83)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[0]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 87)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[1]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 90)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[2]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 93)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[3]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 96)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[4]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[4]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[5]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[5]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 103)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[6]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[6]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 106)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'out[7]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks clk] -max -add_delay 0.000 [get_ports {out[7]}]
+/home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 110)
 Related violations: <none>
 
 

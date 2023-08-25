@@ -31,7 +31,6 @@ module mac#(
         input [DATA_WIDTH  - 1: 0] c,
         output reg [OUT_WIDTH-1: 0] out
     );
-    
     always@(posedge clk) begin
         if(reset) begin
             out <= 0;
