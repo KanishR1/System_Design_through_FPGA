@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2023.1.1 (64-bit)                                   -->
+<!--                                                                              -->
+<!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                        -->
+<!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a35t_0" gui_info="dashboard1=hw_ila_1[xc7a35t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a35t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a35t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a35t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7a35t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;],dashboard2=hw_vios[xc7a35t_0/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/mac.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/mac.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/mac.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="ila" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="out_port[7:7]" gui_info="hw_vios/hw_vio_1=7"/>
+    <Object name="out_port_10[1:1]" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="out_port_11[2:2]" gui_info="hw_vios/hw_vio_1=2"/>
+    <Object name="out_port_12[3:3]" gui_info="hw_vios/hw_vio_1=3"/>
+    <Object name="out_port_13[4:4]" gui_info="hw_vios/hw_vio_1=4"/>
+    <Object name="out_port_14[5:5]" gui_info="hw_vios/hw_vio_1=5"/>
+    <Object name="out_port_15[6:6]" gui_info="hw_vios/hw_vio_1=6"/>
+    <Object name="out_port_9[0:0]" gui_info="hw_vios/hw_vio_1=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_2[1]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_3[2]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_4[3]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_5[4]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_6[5]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_7[6]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_8[7]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port[7]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_10[1]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_11[2]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_12[3]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_13[4]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_14[5]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_15[6]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="out_port_9[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
