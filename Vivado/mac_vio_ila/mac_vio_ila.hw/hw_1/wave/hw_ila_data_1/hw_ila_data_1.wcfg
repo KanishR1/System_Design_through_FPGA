@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/kanish/System_Design_through_FPGA/Vivado/mac_vio_ila/mac_vio_ila.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="group" fp_name="group9">
+      <obj_property name="label">out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="vbus" fp_name="vbus17">
+         <obj_property name="label">val</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="out_8">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_8[7:7]</obj_property>
+            <obj_property name="ObjectShortName">out_8[7:7]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_7">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_7[6:6]</obj_property>
+            <obj_property name="ObjectShortName">out_7[6:6]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_6">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_6[5:5]</obj_property>
+            <obj_property name="ObjectShortName">out_6[5:5]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_5">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_5[4:4]</obj_property>
+            <obj_property name="ObjectShortName">out_5[4:4]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_4">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_4[3:3]</obj_property>
+            <obj_property name="ObjectShortName">out_4[3:3]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_3">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_3[2:2]</obj_property>
+            <obj_property name="ObjectShortName">out_3[2:2]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_2">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_2[1:1]</obj_property>
+            <obj_property name="ObjectShortName">out_2[1:1]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="out_1">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">out_1[0:0]</obj_property>
+            <obj_property name="ObjectShortName">out_1[0:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
