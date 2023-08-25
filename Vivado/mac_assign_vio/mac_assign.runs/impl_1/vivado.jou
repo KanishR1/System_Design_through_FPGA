@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri Aug 25 10:46:30 2023
+# Process ID: 19181
+# Current directory: /home/arulvignesh/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/impl_1
+# Command line: vivado -log mac.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mac.tcl -notrace
+# Log file: /home/arulvignesh/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/impl_1/mac.vdi
+# Journal file: /home/arulvignesh/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/impl_1/vivado.jou
+# Running On: arulvignesh-Lenovo-Legion-Y540-15IRH-PG0, OS: Linux, CPU Frequency: 1600.138 MHz, CPU Physical cores: 4, Host memory: 8224 MB
+#-----------------------------------------------------------
+source mac.tcl -notrace
