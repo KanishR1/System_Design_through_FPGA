@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Fri Aug 25 10:25:39 2023
-# Process ID: 58879
+# Start of session at: Fri Aug 25 10:35:49 2023
+# Process ID: 71678
 # Current directory: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/synth_1
 # Command line: vivado -log mac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
 # Log file: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/synth_1/mac.vds
 # Journal file: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.runs/synth_1/vivado.jou
-# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4296.860 MHz, CPU Physical cores: 4, Host memory: 8100 MB
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4103.303 MHz, CPU Physical cores: 4, Host memory: 8100 MB
 #-----------------------------------------------------------
 source mac.tcl -notrace

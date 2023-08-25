@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date             : Fri Aug 25 10:26:48 2023
+| Date             : Fri Aug 25 10:36:59 2023
 | Host             : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command          : report_power -file mac_power_routed.rpt -pb mac_power_summary_routed.pb -rpx mac_power_routed.rpx
 | Design           : mac
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.089        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.018        |
+| Dynamic (W)              | 0.017        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -127,7 +127,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| clk   | clk    |            10.5 |
+| clk   | clk    |            10.8 |
 +-------+--------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| mac  |     0.018 |
+| mac  |     0.017 |
 +------+-----------+
 
 
