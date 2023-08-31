@@ -1,0 +1,377 @@
+
+*** Running vivado
+    with args -log dsp_macro_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsp_macro_0.tcl
+
+
+****** Vivado v2023.1.1 (64-bit)
+  **** SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+  **** IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+  **** SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source dsp_macro_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1345.828 ; gain = 0.023 ; free physical = 1700 ; free virtual = 4629
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dsp_macro_0
+Command: synth_design -top dsp_macro_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 143603
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2039.730 ; gain = 377.801 ; free physical = 755 ; free virtual = 3674
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dsp_macro_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/synth/dsp_macro_0.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_CE bound to: 0 - type: integer 
+	Parameter C_HAS_CED bound to: 0 - type: integer 
+	Parameter C_HAS_CEA bound to: 0 - type: integer 
+	Parameter C_HAS_CEB bound to: 0 - type: integer 
+	Parameter C_HAS_CEC bound to: 0 - type: integer 
+	Parameter C_HAS_CECONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_CEM bound to: 0 - type: integer 
+	Parameter C_HAS_CEP bound to: 0 - type: integer 
+	Parameter C_HAS_CESEL bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRD bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRA bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRB bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRC bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRM bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRP bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRCONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRSEL bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCIN bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYIN bound to: 0 - type: integer 
+	Parameter C_HAS_ACIN bound to: 0 - type: integer 
+	Parameter C_HAS_BCIN bound to: 0 - type: integer 
+	Parameter C_HAS_PCIN bound to: 0 - type: integer 
+	Parameter C_HAS_A bound to: 1 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_CONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 1 - type: integer 
+	Parameter C_SQUARE_FCN bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_C_WIDTH bound to: 8 - type: integer 
+	Parameter C_D_WIDTH bound to: 18 - type: integer 
+	Parameter C_CONCAT_WIDTH bound to: 48 - type: integer 
+	Parameter C_P_MSB bound to: 16 - type: integer 
+	Parameter C_P_LSB bound to: 0 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 0 - type: integer 
+	Parameter C_HAS_ACOUT bound to: 0 - type: integer 
+	Parameter C_HAS_BCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYOUT bound to: 0 - type: integer 
+	Parameter C_HAS_PCOUT bound to: 0 - type: integer 
+	Parameter C_CONSTANT_1 bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: -1 - type: integer 
+	Parameter C_OPMODES bound to: 000000000011010100000000 - type: string 
+	Parameter C_REG_CONFIG bound to: 00000000000011100011100011000100 - type: string 
+	Parameter C_TEST_CORE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'dsp_macro_v1_0_3' declared at '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/hdl/dsp_macro_v1_0_rfs.vhd:5245' bound to instance 'U0' of component 'dsp_macro_v1_0_3' [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/synth/dsp_macro_0.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'dsp_macro_0' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/synth/dsp_macro_0.vhd:69]
+WARNING: [Synth 8-7129] Port CE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEL[0] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[17] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[16] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[15] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[14] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[13] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[12] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[11] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[10] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[9] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[8] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[7] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[6] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[5] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[3] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[2] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[1] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[47] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[46] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[45] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[44] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[43] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[42] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[41] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[40] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[39] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[38] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[37] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[36] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[35] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[34] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[33] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[32] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[31] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[30] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[29] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[28] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[27] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[26] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[25] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[24] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[23] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[22] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[21] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[20] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[19] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[18] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[17] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[16] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[15] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[14] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[13] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[12] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[11] in module dsp_macro_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CONCAT[10] in module dsp_macro_synth is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2130.668 ; gain = 468.738 ; free physical = 643 ; free virtual = 3562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2148.480 ; gain = 486.551 ; free physical = 641 ; free virtual = 3560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2148.480 ; gain = 486.551 ; free physical = 641 ; free virtual = 3560
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2154.418 ; gain = 0.000 ; free physical = 635 ; free virtual = 3554
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/dsp_macro_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/dsp_macro_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/dsp_macro_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/dsp_macro_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2221.418 ; gain = 0.000 ; free physical = 627 ; free virtual = 3545
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2221.418 ; gain = 0.000 ; free physical = 627 ; free virtual = 3545
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 617 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 616 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/dsp_macro_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 616 ; free virtual = 3538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 611 ; free virtual = 3535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 633 ; free virtual = 3559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 631 ; free virtual = 3555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 631 ; free virtual = 3555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 617 ; free virtual = 3540
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 613 ; free virtual = 3539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xbip_dsp48e1_wrapper_v3_0 | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 1    | 1    | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
+|2     |LUT2    |     8|
+|3     |LUT3    |     1|
+|4     |FDRE    |   106|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 612 ; free virtual = 3539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2221.418 ; gain = 486.551 ; free physical = 611 ; free virtual = 3537
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2221.418 ; gain = 559.488 ; free physical = 611 ; free virtual = 3537
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2221.418 ; gain = 0.000 ; free physical = 611 ; free virtual = 3537
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2221.418 ; gain = 0.000 ; free physical = 884 ; free virtual = 3810
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bf1e5341
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 2221.418 ; gain = 875.590 ; free physical = 882 ; free virtual = 3808
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1898.963; main = 1581.491; forked = 386.264
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3209.129; main = 2205.422; forked = 1003.707
+INFO: [Common 17-1381] The checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/dsp_macro_0_synth_1/dsp_macro_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dsp_macro_0, cache-ID = bd4c747f22875199
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/dsp_macro_0_synth_1/dsp_macro_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dsp_macro_0_utilization_synth.rpt -pb dsp_macro_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 31 22:06:36 2023...

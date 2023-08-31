@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Thu Aug 31 21:52:20 2023
+# Process ID: 115219
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/impl_1
+# Command line: vivado -log block_ram.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source block_ram.tcl -notrace
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/impl_1/block_ram.vdi
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.runs/impl_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4250.034 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+#-----------------------------------------------------------
+source block_ram.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1345.828 ; gain = 0.023 ; free physical = 1252 ; free virtual = 3853
+Command: link_design -top block_ram -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'a'
+INFO: [Project 1-454] Reading design checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'b'
+INFO: [Project 1-454] Reading design checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp' for cell 'c'
+INFO: [Project 1-454] Reading design checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/vio_0/vio_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1697.711 ; gain = 0.000 ; free physical = 940 ; free virtual = 3542
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1839.363 ; gain = 0.000 ; free physical = 848 ; free virtual = 3450
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.55 . Memory (MB): peak = 1928.176 ; gain = 88.812 ; free physical = 828 ; free virtual = 3430
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 17c5bf641
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2420.973 ; gain = 492.797 ; free physical = 405 ; free virtual = 3007
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
