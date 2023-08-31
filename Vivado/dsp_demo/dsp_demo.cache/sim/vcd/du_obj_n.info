@@ -1,0 +1,6 @@
+        In: {CLK}                          VHDL   
+        In: {A[3:0]}                       VHDL   
+        In: {B[3:0]}                       VHDL   
+        In: {C[3:0]}                       VHDL   
+       Out: {P[7:0]}                       VHDL   
+

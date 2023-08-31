@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kanish/System_Design_through_FPGA/Vivado/dsp_demo/dsp_demo.gen/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kanish/System_Design_through_FPGA/Vivado/dsp_demo/dsp_demo.gen/sources_1/ip/vio_0/sim/vio_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kanish/System_Design_through_FPGA/Vivado/dsp_demo/dsp_demo.srcs/sources_1/imports/Assignment 1 files-20230825/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac

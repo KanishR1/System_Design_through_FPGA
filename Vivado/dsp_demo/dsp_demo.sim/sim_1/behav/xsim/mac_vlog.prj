@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dsp_demo.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../dsp_demo.gen/sources_1/ip/vio_0/sim/vio_0.v" \
+"../../../../dsp_demo.srcs/sources_1/imports/Assignment 1 files-20230825/mac.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

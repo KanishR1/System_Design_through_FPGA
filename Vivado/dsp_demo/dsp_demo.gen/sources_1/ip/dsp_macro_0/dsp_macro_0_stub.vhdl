@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
 -- Date        : Fri Aug 25 12:42:36 2023
 -- Host        : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/kanish/System_Design_through_FPGA/Vivado/dsp_demo/dsp_demo.gen/sources_1/ip/dsp_macro_0/dsp_macro_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top dsp_macro_0 -prefix
+--               dsp_macro_0_ dsp_macro_0_stub.vhdl
 -- Design      : dsp_macro_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

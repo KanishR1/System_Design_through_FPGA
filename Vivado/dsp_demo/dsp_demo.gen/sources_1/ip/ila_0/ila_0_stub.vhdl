@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
--- Date        : Fri Aug 25 12:02:49 2023
+-- Date        : Sun Aug 27 11:04:50 2023
 -- Host        : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/kanish/System_Design_through_FPGA/Vivado/mac_vio_ila/mac_vio_ila.gen/sources_1/ip/ila_0/ila_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top ila_0 -prefix
+--               ila_0_ ila_0_stub.vhdl
 -- Design      : ila_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

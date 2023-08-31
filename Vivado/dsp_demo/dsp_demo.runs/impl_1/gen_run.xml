@@ -3,11 +3,6 @@
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="mac_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="mac_routed.rqs"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-BGN" Name="mac.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="mac.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="mac.ltx"/>
   <File Type="RBD_FILE" Name="mac.rbd"/>
   <File Type="NPI_FILE" Name="mac.npi"/>
   <File Type="RNPI_FILE" Name="mac.rnpi"/>
@@ -15,16 +10,10 @@
   <File Type="RCFI_FILE" Name="mac.rcfi"/>
   <File Type="PL-PDI-FILE" Name="mac_pld.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="mac_soc.pdi"/>
-  <File Type="RDI-RDI" Name="mac.vdi"/>
-  <File Type="PDI-FILE" Name="mac.pdi"/>
-  <File Type="BITSTR-MMI" Name="mac.mmi"/>
-  <File Type="BITSTR-BMM" Name="mac_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="mac.nky"/>
-  <File Type="BITSTR-RBT" Name="mac.rbt"/>
-  <File Type="BITSTR-MSK" Name="mac.msk"/>
-  <File Type="BG-BIN" Name="mac.bin"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="BG-BIT" Name="mac.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mac_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="mac_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mac_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mac_methodology_drc_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mac_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mac_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mac_bus_skew_postroute_physopted.rpt"/>
@@ -32,58 +21,55 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mac_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mac_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mac_postroute_physopt_bb.dcp"/>
+  <File Type="PLACE-IO" Name="mac_io_placed.rpt"/>
+  <File Type="OPT-DRC" Name="mac_drc_opted.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mac.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mac.sysdef"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="mac_postroute_physopt.dcp"/>
-  <File Type="BG-DRC" Name="mac.drc"/>
-  <File Type="ROUTE-RQS-PB" Name="mac_rqs_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="mac_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="mac_bus_skew_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="mac.mmi"/>
+  <File Type="BITSTR-BMM" Name="mac_bd.bmm"/>
+  <File Type="PHYSOPT-DCP" Name="mac_physopt.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="mac_utilization_placed.pb"/>
+  <File Type="BG-BGN" Name="mac.bgn"/>
+  <File Type="OPT-DCP" Name="mac_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="mac.hwdef"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="mac.bit"/>
   <File Type="ROUTE-BUS-SKEW" Name="mac_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="mac_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="mac_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="mac_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="mac_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="mac_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="mac_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="mac_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="mac_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="mac_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="mac_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mac_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mac_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="mac_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="mac_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="mac_drc_routed.pb"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="mac.tcl"/>
+  <File Type="REPORTS-TCL" Name="mac_reports.tcl"/>
+  <File Type="PLACE-UTIL" Name="mac_utilization_placed.rpt"/>
+  <File Type="BG-DRC" Name="mac.drc"/>
+  <File Type="PLACE-CTRL" Name="mac_control_sets_placed.rpt"/>
+  <File Type="PDI-FILE" Name="mac.pdi"/>
+  <File Type="RDI-RDI" Name="mac.vdi"/>
+  <File Type="BG-BIN" Name="mac.bin"/>
+  <File Type="PLACE-DCP" Name="mac_placed.dcp"/>
+  <File Type="BITSTR-MSK" Name="mac.msk"/>
+  <File Type="PWROPT-DCP" Name="mac_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mac_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BITSTR-RBT" Name="mac.rbt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mac_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-NKY" Name="mac.nky"/>
   <File Type="ROUTE-DRC" Name="mac_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="mac_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="mac_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="mac_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mac_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mac_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mac_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mac_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="mac_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="mac_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="mac_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="mac_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="mac_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="mac_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="mac_postplace_pwropt.dcp"/>
-  <File Type="PLACE-RQA-PB" Name="mac_rqa_placed.pb"/>
-  <File Type="PLACE-TIMING" Name="mac_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="mac_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="mac_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="mac_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="mac_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="mac_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="mac_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="mac_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="mac_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="mac_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="mac_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="mac_pwropt.dcp"/>
-  <File Type="OPT-RQA-PB" Name="mac_rqa_opted.pb"/>
-  <File Type="OPT-HWDEF" Name="mac.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="mac_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="mac_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="mac_opt.dcp"/>
-  <File Type="OPT-TIMING" Name="mac_timing_summary_opted.rpt"/>
-  <File Type="REPORTS-TCL" Name="mac_reports.tcl"/>
-  <File Type="INIT-TIMING" Name="mac_timing_summary_init.rpt"/>
-  <File Type="PA-TCL" Name="mac.tcl"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mac_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mac_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mac_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mac_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mac_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mac_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mac_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mac_bus_skew_routed.rpx"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
@@ -140,9 +126,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -152,6 +136,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="dsp_macro_0"/>
 </GenRun>

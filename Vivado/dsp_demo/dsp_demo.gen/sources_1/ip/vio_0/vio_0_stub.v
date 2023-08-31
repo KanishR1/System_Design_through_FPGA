@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-// Date        : Fri Aug 25 10:39:19 2023
-// Host        : arulvignesh-Lenovo-Legion-Y540-15IRH-PG0 running 64-bit Ubuntu 22.04.2 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/arulvignesh/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.gen/sources_1/ip/vio_0/vio_0_stub.v
+// Date        : Sun Aug 27 11:04:34 2023
+// Host        : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
+// Command     : write_verilog -force -mode synth_stub -rename_top vio_0 -prefix
+//               vio_0_ vio_0_stub.v
 // Design      : vio_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1
