@@ -2,8 +2,10 @@
 2020.2
 Jun 16 2023
 19:36:26
-/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1693492883,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/sources_1/new/block_ram.v,,blk_mem_gen_0,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1693492883,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/vio_0/sim/vio_0.v,,blk_mem_gen_0,,,,,,,,
 /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1693492982,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
 /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v,1693497991,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,,blk_mem_gen_2,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/dsp_macro_0/sim/dsp_macro_0.vhd,1693499755,vhdl,,,,dsp_macro_0,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/vio_0/sim/vio_0.v,1693500070,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/sources_1/new/block_ram.v,,vio_0,,,,,,,,
 /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
-/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/sources_1/new/block_ram.v,1693497500,verilog,,,,block_ram,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.srcs/sources_1/new/block_ram.v,1693502783,verilog,,,,block_ram,,,,,,,,

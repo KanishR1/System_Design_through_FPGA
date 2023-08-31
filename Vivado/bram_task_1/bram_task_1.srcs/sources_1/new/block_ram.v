@@ -27,7 +27,7 @@ module block_ram(
     wire [7:0]douta,doutb,doutc,din;
     wire reset;
     reg wea,ena;
-    wire [16:0]result;
+    reg [16:0]result;
     reg [3:0]addr;
     
     initial begin
@@ -71,21 +71,24 @@ module block_ram(
   .dina(din),    // input wire [7 : 0] dina
   .douta(doutc)  // output wire [7 : 0] douta
 );
-
+/*
 dsp_macro_0 dsp(
   .CLK(clk),  // input wire CLK
   .A(douta),      // input wire [7 : 0] A
-  .B(doubtb),      // input wire [7 : 0] B
+  .B(doutb),      // input wire [7 : 0] B
   .C(doutc),      // input wire [7 : 0] C
   .P(result)      // output wire [16 : 0] P
 );
+*/
 
 always @(posedge clk or posedge reset) begin
     if(reset) begin
-        addr=4'd0;
+        addr<=4'd0;
+        result<=17'd0;
     end
-    else begin 
-       addr=(addr==4'b1001)?4'b0000:addr+1;
+    else begin
+       result<=(douta*doutb)+doutc; 
+       addr<=(addr==4'b1001)?4'b0000:addr+1;
     end
 end
 
