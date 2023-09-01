@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693552938">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="block_ram_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="block_ram_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="block_ram.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="block_ram.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="block_ram.ltx"/>
+  <File Type="RBD_FILE" Name="block_ram.rbd"/>
+  <File Type="NPI_FILE" Name="block_ram.npi"/>
+  <File Type="RNPI_FILE" Name="block_ram.rnpi"/>
+  <File Type="CFI_FILE" Name="block_ram.cfi"/>
+  <File Type="RCFI_FILE" Name="block_ram.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="block_ram_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="block_ram_soc.pdi"/>
+  <File Type="RDI-RDI" Name="block_ram.vdi"/>
+  <File Type="PDI-FILE" Name="block_ram.pdi"/>
+  <File Type="BITSTR-MMI" Name="block_ram.mmi"/>
+  <File Type="BITSTR-BMM" Name="block_ram_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="block_ram.nky"/>
+  <File Type="BITSTR-RBT" Name="block_ram.rbt"/>
+  <File Type="BITSTR-MSK" Name="block_ram.msk"/>
+  <File Type="BG-BIN" Name="block_ram.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="block_ram.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="block_ram_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="block_ram_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="block_ram_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="block_ram_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="block_ram_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="block_ram_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="block_ram_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="block_ram_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="block_ram.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="block_ram_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="block_ram_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="block_ram_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="block_ram_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="block_ram_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="block_ram_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="block_ram_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="block_ram_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="block_ram_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="block_ram_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="block_ram_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="block_ram_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="block_ram_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="block_ram_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="block_ram_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="block_ram_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="block_ram_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="block_ram_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="block_ram_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="block_ram_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="block_ram_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="block_ram_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="block_ram_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="block_ram_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="block_ram_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="block_ram_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="block_ram_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="block_ram_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="block_ram_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="block_ram_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="block_ram_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="block_ram_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="block_ram_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="block_ram_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="block_ram_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="block_ram_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="block_ram_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="block_ram_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="block_ram_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="block_ram_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="block_ram_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="block_ram_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="block_ram.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="block_ram_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="block_ram_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="block_ram_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="block_ram_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="block_ram_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="block_ram_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="block_ram.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bram_assignment/bram_assignment.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci"/>
+        <Attr Name="ImportTime" Val="1693542513"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bram_assignment/bram_assignment.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1693542476"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/block_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bram_assignment/bram_assignment.srcs/sources_1/imports/new/block_ram.v"/>
+        <Attr Name="ImportTime" Val="1693550535"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../bram_assignment/memory2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../bram_assignment/memory1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="block_ram"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../bram_assignment/bram_assignment.srcs/constrs_1/new/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1693543586"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>

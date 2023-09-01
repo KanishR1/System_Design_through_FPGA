@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri Sep  1 12:50:36 2023
+# Process ID: 204730
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/ila_0_synth_1
+# Command line: vivado -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/ila_0_synth_1/ila_0.vds
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/ila_0_synth_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 2298.682 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+#-----------------------------------------------------------
+source ila_0.tcl -notrace

@@ -5,6 +5,7 @@ module block_ram(
     
     wire [7:0]douta,doutb,din;
     wire [8:0]doutc;
+    
     wire reset;
     reg wea,ena;
     reg web;

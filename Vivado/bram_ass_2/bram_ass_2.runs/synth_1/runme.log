@@ -1,0 +1,342 @@
+
+*** Running vivado
+    with args -log block_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_ram.tcl
+
+
+****** Vivado v2023.1.1 (64-bit)
+  **** SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+  **** IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+  **** SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source block_ram.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1345.891 ; gain = 0.023 ; free physical = 1626 ; free virtual = 4355
+Command: synth_design -top block_ram -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 205628
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2057.777 ; gain = 376.770 ; free physical = 611 ; free virtual = 3340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'block_ram' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'add' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:2]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-689] width (10) of port connection 'c' does not match port width (9) of module 'add' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:52]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/.Xil/Vivado-205568-kanish-G3-3500/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'probe0' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:56]
+WARNING: [Synth 8-689] width (10) of port connection 'probe1' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:57]
+WARNING: [Synth 8-689] width (10) of port connection 'probe2' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:58]
+WARNING: [Synth 8-689] width (10) of port connection 'probe3' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:59]
+WARNING: [Synth 8-689] width (10) of port connection 'probe4' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:60]
+WARNING: [Synth 8-689] width (10) of port connection 'probe5' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:61]
+WARNING: [Synth 8-689] width (10) of port connection 'probe6' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:62]
+WARNING: [Synth 8-689] width (10) of port connection 'probe7' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:63]
+WARNING: [Synth 8-689] width (10) of port connection 'probe8' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:64]
+WARNING: [Synth 8-689] width (10) of port connection 'probe9' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:65]
+WARNING: [Synth 8-689] width (10) of port connection 'probe10' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:66]
+WARNING: [Synth 8-689] width (10) of port connection 'probe11' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:67]
+WARNING: [Synth 8-689] width (10) of port connection 'probe12' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:68]
+WARNING: [Synth 8-689] width (10) of port connection 'probe13' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:69]
+WARNING: [Synth 8-689] width (10) of port connection 'probe14' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:70]
+WARNING: [Synth 8-689] width (10) of port connection 'probe15' does not match port width (9) of module 'ila_0' [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'block_ram' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[0].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:52]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[1].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[2].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[3].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[4].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[5].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[6].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[7].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[8].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[9].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[10].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[11].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[12].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[13].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[14].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[15].M1'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:92]
+WARNING: [Synth 8-7137] Register ain_reg[0] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[1] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[2] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[3] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[4] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[5] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[6] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[7] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[8] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[9] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[10] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[11] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[12] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[13] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[14] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register ain_reg[15] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:81]
+WARNING: [Synth 8-7137] Register bin_reg[0] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[1] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[2] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[3] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[4] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[5] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[6] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[7] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[8] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[9] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[10] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[11] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[12] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[13] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[14] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register bin_reg[15] in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:82]
+WARNING: [Synth 8-7137] Register dacq_reg in module block_ram has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:72]
+WARNING: [Synth 8-3848] Net din in module/entity block_ram does not have driver. [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:10]
+WARNING: [Synth 8-3848] Net reset in module/entity block_ram does not have driver. [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2129.715 ; gain = 448.707 ; free physical = 524 ; free virtual = 3255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2138.621 ; gain = 457.613 ; free physical = 523 ; free virtual = 3253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2138.621 ; gain = 457.613 ; free physical = 523 ; free virtual = 3253
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.590 ; gain = 0.000 ; free physical = 522 ; free virtual = 3253
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'b'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'b'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'a'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'a'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/constrs_1/imports/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/constrs_1/imports/new/constraints.xdc:4]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/constrs_1/imports/new/constraints.xdc:5]
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/constrs_1/imports/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/constrs_1/imports/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_ram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block_ram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.402 ; gain = 0.000 ; free physical = 511 ; free virtual = 3241
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.402 ; gain = 0.000 ; free physical = 511 ; free virtual = 3241
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'a' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'b' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 516 ; free virtual = 3247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 516 ; free virtual = 3247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for b. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for a. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 516 ; free virtual = 3247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 515 ; free virtual = 3246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 32    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 505 ; free virtual = 3240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (dacq_reg_LDC) is unused and will be removed from module block_ram.
+WARNING: [Synth 8-3332] Sequential element (dacq_reg_P) is unused and will be removed from module block_ram.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     2|
+|3     |ila         |     1|
+|4     |BUFG        |     1|
+|5     |CARRY4      |    48|
+|6     |LUT1        |    17|
+|7     |LUT2        |   273|
+|8     |LUT3        |     1|
+|9     |LUT4        |    17|
+|10    |LUT6        |     1|
+|11    |FDRE        |   261|
+|12    |IBUF        |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2271.402 ; gain = 457.613 ; free physical = 504 ; free virtual = 3239
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2271.402 ; gain = 590.395 ; free physical = 504 ; free virtual = 3239
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2271.402 ; gain = 0.000 ; free physical = 504 ; free virtual = 3239
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.402 ; gain = 0.000 ; free physical = 787 ; free virtual = 3522
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c0dca100
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 2271.402 ; gain = 909.496 ; free physical = 787 ; free virtual = 3522
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1834.234; main = 1516.483; forked = 381.852
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3243.094; main = 2271.406; forked = 1003.703
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.runs/synth_1/block_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file block_ram_utilization_synth.rpt -pb block_ram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  1 12:53:28 2023...

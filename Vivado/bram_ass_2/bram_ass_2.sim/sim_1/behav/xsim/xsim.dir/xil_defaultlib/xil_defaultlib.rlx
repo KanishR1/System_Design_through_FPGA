@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 16 2023
+19:36:26
+/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1693542479,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v,,blk_mem_gen_0,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1693542515,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/ila_0/sim/ila_0.v,1693552831,verilog,,/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,,ila_0,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+/home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/sources_1/imports/new/block_ram.v,1693553716,verilog,,,,add;block_ram,,,,,,,,
