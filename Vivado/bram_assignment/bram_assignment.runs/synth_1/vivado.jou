@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri Sep  1 11:32:33 2023
+# Process ID: 146251
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/bram_assignment/bram_assignment.runs/synth_1
+# Command line: vivado -log block_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_ram.tcl
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/bram_assignment/bram_assignment.runs/synth_1/block_ram.vds
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/bram_assignment/bram_assignment.runs/synth_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 2447.352 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+#-----------------------------------------------------------
+source block_ram.tcl -notrace

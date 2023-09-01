@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-// Date        : Thu Aug 31 20:12:04 2023
+// Date        : Fri Sep  1 09:59:09 2023
 // Host        : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/kanish/System_Design_through_FPGA/Vivado/bram_task_1/bram_task_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
+//               /home/kanish/System_Design_through_FPGA/Vivado/bram_assignment/bram_assignment.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
 // Design      : blk_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1
