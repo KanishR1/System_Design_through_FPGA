@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sat Sep  9 14:45:28 2023
+# Process ID: 17912
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/tcl_demo_1/tcl_demo_1.runs/synth_1
+# Command line: vivado -log mac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/tcl_demo_1/tcl_demo_1.runs/synth_1/mac.vds
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/tcl_demo_1/tcl_demo_1.runs/synth_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 3500.280 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+#-----------------------------------------------------------
+source mac.tcl -notrace

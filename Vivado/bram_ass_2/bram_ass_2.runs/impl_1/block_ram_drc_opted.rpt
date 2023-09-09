@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date         : Fri Sep  1 12:55:51 2023
+| Date         : Thu Sep  7 20:12:40 2023
 | Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_drc -file block_ram_drc_opted.rpt -pb block_ram_drc_opted.pb -rpx block_ram_drc_opted.rpx
 | Design       : block_ram

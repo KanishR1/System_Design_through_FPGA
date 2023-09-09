@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -119,6 +116,8 @@ set_property used_in_implementation false [get_files /home/kanish/System_Design_
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/kanish/System_Design_through_FPGA/Vivado/bram_ass_2/bram_ass_2.srcs/utils_1/imports/synth_1/block_ram.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,0 +1,21 @@
+; This .COE file specifies the contents for a block memory
+; of depth=16, and width=8.  In this case, values are specified
+; in binary format.
+memory_initialization_radix=2;
+memory_initialization_vector=
+00000001,
+00000010,
+00000011,
+00000100,
+00000101,
+00000110,
+00000111,
+00001000,
+00000001,
+00000010,
+00000011,
+00000100,
+00000101,
+00000110,
+00000111,
+00001000;

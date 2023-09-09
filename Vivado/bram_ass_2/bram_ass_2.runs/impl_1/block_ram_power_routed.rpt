@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date             : Fri Sep  1 12:56:41 2023
+| Date             : Thu Sep  7 20:13:13 2023
 | Host             : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command          : report_power -file block_ram_power_routed.rpt -pb block_ram_power_summary_routed.pb -rpx block_ram_power_routed.rpx
 | Design           : block_ram
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.098        |
+| Total On-Chip Power (W)  | 0.097        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.029        |
+| Dynamic (W)              | 0.028        |
 | Device Static (W)        | 0.069        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.013 |        4 |       --- |             --- |
-| Slice Logic              |     0.003 |     6856 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1887 |     20800 |            9.07 |
+| Slice Logic              |     0.003 |     6840 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1877 |     20800 |            9.02 |
 |   LUT as Shift Register  |    <0.001 |      285 |      9600 |            2.97 |
 |   Register               |    <0.001 |     3356 |     41600 |            8.07 |
 |   CARRY4                 |    <0.001 |      123 |      8150 |            1.51 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   F7/F8 Muxes            |    <0.001 |       55 |     32600 |            0.17 |
 |   Others                 |     0.000 |      433 |       --- |             --- |
-| Signals                  |     0.005 |     4826 |       --- |             --- |
+| Signals                  |     0.005 |     4831 |       --- |             --- |
 | Block RAM                |     0.007 |      5.5 |        50 |           11.00 |
 | I/O                      |    <0.001 |        1 |       106 |            0.94 |
 | Static Power             |     0.069 |          |           |                 |
-| Total                    |     0.098 |          |           |                 |
+| Total                    |     0.097 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -145,7 +145,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| block_ram                |     0.029 |
+| block_ram                |     0.028 |
 |   a                      |     0.003 |
 |     U0                   |     0.003 |
 |       inst_blk_mem_gen   |     0.003 |
@@ -155,9 +155,9 @@ Table of Contents
 |   dbg_hub                |     0.003 |
 |     inst                 |     0.003 |
 |       BSCANID.u_xsdbm_id |     0.003 |
-|   ila                    |     0.018 |
-|     inst                 |     0.018 |
-|       ila_core_inst      |     0.018 |
+|   ila                    |     0.017 |
+|     inst                 |     0.017 |
+|       ila_core_inst      |     0.017 |
 +--------------------------+-----------+
 
 
