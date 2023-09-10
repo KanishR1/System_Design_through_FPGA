@@ -1,0 +1,21 @@
+Vivado Simulator v2023.1.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/kanish/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mac_tb_behav xil_defaultlib.mac_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ADDSUB' [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/sources_1/imports/kanish/mac.v:62]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'CARRYIN' [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/sources_1/imports/kanish/mac.v:64]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'CE' [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/sources_1/imports/kanish/mac.v:65]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LOAD' [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/sources_1/imports/kanish/mac.v:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.DSP48E1(ADREG=0,DREG=0,MREG=0)
+Compiling module unimacro_ver.MACC_MACRO(DEVICE="7SERIES",LATE...
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.mac_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mac_tb_behav

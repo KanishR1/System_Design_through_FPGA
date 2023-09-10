@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:30:25 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sun Sep 10 02:15:32 2023
+# Process ID: 372075
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.runs/impl_1
+# Command line: vivado -log mac.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mac.tcl -notrace
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.runs/impl_1/mac.vdi
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.runs/impl_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 3500.329 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+#-----------------------------------------------------------
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1341.895 ; gain = 0.023 ; free physical = 1075 ; free virtual = 3393
+Command: link_design -top mac -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.gen/sources_1/ip/vio_0/vio_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1696.684 ; gain = 0.000 ; free physical = 733 ; free virtual = 3071
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.gen/sources_1/ip/vio_0/vio_0.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/constrs_1/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/constrs_1/new/constraints.xdc:4]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/constrs_1/new/constraints.xdc:5]
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1844.273 ; gain = 0.000 ; free physical = 627 ; free virtual = 2967
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.6 . Memory (MB): peak = 1930.117 ; gain = 85.844 ; free physical = 604 ; free virtual = 2945
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.srcs/constrs_1/new/constraints.xdc:4]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 26625312f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2355.000 ; gain = 424.883 ; free physical = 190 ; free virtual = 2531
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
