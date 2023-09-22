@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../project_7segmentdisplayuart.ip_user_files/ipstatic" \
+"../../../../project_7segmentdisplayuart.srcs/sources_1/imports/Downloads/uart_rx.sv" \
+"../../../../project_7segmentdisplayuart.srcs/sim_1/imports/Downloads/tb_uart_rx.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

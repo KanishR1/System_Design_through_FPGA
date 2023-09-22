@@ -1,0 +1,2633 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Sun Sep 10 14:55:42 2023
+| Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file mac_timing_summary_routed.rpt -pb mac_timing_summary_routed.pb -rpx mac_timing_summary_routed.rpx -warn_on_violation
+| Design       : mac
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                                           Violations  
+---------  --------  ----------------------------------------------------  ----------  
+TIMING-18  Warning   Missing input or output delay                         21          
+XDCC-4     Warning   User Clock constraint overwritten with the same name  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (12)
+6. checking no_output_delay (9)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (12)
+-------------------------------
+ There are 12 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (9)
+-------------------------------
+ There are 9 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      7.931        0.000                      0                  104        0.112        0.000                      0                  104        4.500        0.000                       0                    62  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 7.931        0.000                      0                  104        0.112        0.000                      0                  104        4.500        0.000                       0                    62  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)        clk                         
+(none)                      clk           
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.931ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.112ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.931ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[47]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.933ns  (logic 0.518ns (26.794%)  route 1.415ns (73.206%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.415     7.017    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[47]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X11Y19         FDRE (Setup_fdre_C_D)       -0.058    14.948    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[47]
+  -------------------------------------------------------------------
+                         required time                         14.948    
+                         arrival time                          -7.017    
+  -------------------------------------------------------------------
+                         slack                                  7.931    
+
+Slack (MET) :             7.956ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.908ns  (logic 0.518ns (27.149%)  route 1.390ns (72.851%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.390     6.991    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.439    14.780    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[19]/C
+                         clock pessimism              0.260    15.040    
+                         clock uncertainty           -0.035    15.005    
+    SLICE_X13Y19         FDRE (Setup_fdre_C_D)       -0.058    14.947    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[19]
+  -------------------------------------------------------------------
+                         required time                         14.947    
+                         arrival time                          -6.991    
+  -------------------------------------------------------------------
+                         slack                                  7.956    
+
+Slack (MET) :             7.986ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[46]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.908ns  (logic 0.518ns (27.149%)  route 1.390ns (72.851%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.390     6.991    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X12Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[46]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.439    14.780    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X12Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[46]/C
+                         clock pessimism              0.260    15.040    
+                         clock uncertainty           -0.035    15.005    
+    SLICE_X12Y19         FDRE (Setup_fdre_C_D)       -0.028    14.977    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[46]
+  -------------------------------------------------------------------
+                         required time                         14.977    
+                         arrival time                          -6.991    
+  -------------------------------------------------------------------
+                         slack                                  7.986    
+
+Slack (MET) :             8.098ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[39]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.744ns  (logic 0.518ns (29.702%)  route 1.226ns (70.298%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.226     6.827    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[39]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[39]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X11Y19         FDRE (Setup_fdre_C_D)       -0.081    14.925    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[39]
+  -------------------------------------------------------------------
+                         required time                         14.925    
+                         arrival time                          -6.827    
+  -------------------------------------------------------------------
+                         slack                                  8.098    
+
+Slack (MET) :             8.111ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.744ns  (logic 0.518ns (29.708%)  route 1.226ns (70.292%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.226     6.827    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.439    14.780    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/C
+                         clock pessimism              0.260    15.040    
+                         clock uncertainty           -0.035    15.005    
+    SLICE_X13Y19         FDRE (Setup_fdre_C_D)       -0.067    14.938    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]
+  -------------------------------------------------------------------
+                         required time                         14.938    
+                         arrival time                          -6.827    
+  -------------------------------------------------------------------
+                         slack                                  8.111    
+
+Slack (MET) :             8.118ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[45]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.744ns  (logic 0.518ns (29.702%)  route 1.226ns (70.298%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.226     6.827    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[45]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X11Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[45]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X11Y19         FDRE (Setup_fdre_C_D)       -0.061    14.945    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[45]
+  -------------------------------------------------------------------
+                         required time                         14.945    
+                         arrival time                          -6.827    
+  -------------------------------------------------------------------
+                         slack                                  8.118    
+
+Slack (MET) :             8.121ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.744ns  (logic 0.518ns (29.708%)  route 1.226ns (70.292%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.226     6.827    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[15]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X13Y18         FDRE (Setup_fdre_C_D)       -0.058    14.948    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         14.948    
+                         arrival time                          -6.827    
+  -------------------------------------------------------------------
+                         slack                                  8.121    
+
+Slack (MET) :             8.150ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[35]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.744ns  (logic 0.518ns (29.697%)  route 1.226ns (70.303%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.226     6.828    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X12Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[35]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X12Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[35]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X12Y18         FDRE (Setup_fdre_C_D)       -0.028    14.978    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[35]
+  -------------------------------------------------------------------
+                         required time                         14.978    
+                         arrival time                          -6.828    
+  -------------------------------------------------------------------
+                         slack                                  8.150    
+
+Slack (MET) :             8.164ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[38]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.713ns  (logic 0.518ns (30.241%)  route 1.195ns (69.759%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.195     6.796    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X12Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.439    14.780    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X12Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[38]/C
+                         clock pessimism              0.260    15.040    
+                         clock uncertainty           -0.035    15.005    
+    SLICE_X12Y19         FDRE (Setup_fdre_C_D)       -0.045    14.960    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[38]
+  -------------------------------------------------------------------
+                         required time                         14.960    
+                         arrival time                          -6.796    
+  -------------------------------------------------------------------
+                         slack                                  8.164    
+
+Slack (MET) :             8.166ns  (required time - arrival time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        1.689ns  (logic 0.518ns (30.664%)  route 1.171ns (69.336%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.781ns = ( 14.781 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.083ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.562     5.083    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y15          FDRE (Prop_fdre_C_Q)         0.518     5.601 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=45, routed)          1.171     6.773    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[3]_0
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.440    14.781    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+                         clock pessimism              0.260    15.041    
+                         clock uncertainty           -0.035    15.006    
+    SLICE_X13Y18         FDRE (Setup_fdre_C_D)       -0.067    14.939    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]
+  -------------------------------------------------------------------
+                         required time                         14.939    
+                         arrival time                          -6.773    
+  -------------------------------------------------------------------
+                         slack                                  8.166    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.112ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/OPMODE[0]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.330ns  (logic 0.141ns (42.766%)  route 0.189ns (57.234%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.105ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.443ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.560     1.443    dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/CLK
+    SLICE_X11Y17         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y17         FDRE (Prop_fdre_C_Q)         0.141     1.584 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[8]/Q
+                         net (fo=1, routed)           0.189     1.773    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_0[0]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/OPMODE[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.498     1.548    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_OPMODE[0])
+                                                      0.113     1.661    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.661    
+                         arrival time                           1.773    
+  -------------------------------------------------------------------
+                         slack                                  0.112    
+
+Slack (MET) :             0.113ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/OPMODE[2]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.331ns  (logic 0.141ns (42.636%)  route 0.190ns (57.364%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.105ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.443ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.560     1.443    dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/CLK
+    SLICE_X11Y17         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y17         FDRE (Prop_fdre_C_Q)         0.141     1.584 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_op4/opt_has_pipe.first_q_reg[10]/Q
+                         net (fo=1, routed)           0.190     1.774    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_0[2]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/OPMODE[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.498     1.548    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_OPMODE[2])
+                                                      0.113     1.661    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.661    
+                         arrival time                           1.774    
+  -------------------------------------------------------------------
+                         slack                                  0.113    
+
+Slack (MET) :             0.130ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[16]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.141ns (40.026%)  route 0.211ns (59.974%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.127ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.441ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.558     1.441    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y19         FDRE (Prop_fdre_C_Q)         0.141     1.582 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/Q
+                         net (fo=1, routed)           0.211     1.793    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[16]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[16])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.793    
+  -------------------------------------------------------------------
+                         slack                                  0.130    
+
+Slack (MET) :             0.131ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[12]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.141ns (40.026%)  route 0.211ns (59.974%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.126ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.442ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.559     1.442    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y18         FDRE (Prop_fdre_C_Q)         0.141     1.583 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/Q
+                         net (fo=1, routed)           0.211     1.794    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[12]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[12])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.794    
+  -------------------------------------------------------------------
+                         slack                                  0.131    
+
+Slack (MET) :             0.132ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[17]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[17]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.141ns (39.753%)  route 0.214ns (60.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.127ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.441ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.558     1.441    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y19         FDRE (Prop_fdre_C_Q)         0.141     1.582 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[17]/Q
+                         net (fo=1, routed)           0.214     1.796    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[17]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[17])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.796    
+  -------------------------------------------------------------------
+                         slack                                  0.132    
+
+Slack (MET) :             0.133ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[13]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.141ns (39.753%)  route 0.214ns (60.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.126ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.442ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.559     1.442    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y18         FDRE (Prop_fdre_C_Q)         0.141     1.583 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/Q
+                         net (fo=1, routed)           0.214     1.797    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[13]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[13])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.797    
+  -------------------------------------------------------------------
+                         slack                                  0.133    
+
+Slack (MET) :             0.133ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[14]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.141ns (39.753%)  route 0.214ns (60.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.126ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.442ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.559     1.442    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y18         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y18         FDRE (Prop_fdre_C_Q)         0.141     1.583 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[14]/Q
+                         net (fo=1, routed)           0.214     1.797    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[14]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[14])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.797    
+  -------------------------------------------------------------------
+                         slack                                  0.133    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[26]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.353ns  (logic 0.141ns (39.893%)  route 0.212ns (60.107%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.124ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.561     1.444    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y16         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y16         FDRE (Prop_fdre_C_Q)         0.141     1.585 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[26]/Q
+                         net (fo=1, routed)           0.212     1.798    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[26]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[26]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[26])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.798    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[28]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.141ns (39.753%)  route 0.214ns (60.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.125ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.443ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.560     1.443    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X13Y17         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y17         FDRE (Prop_fdre_C_Q)         0.141     1.584 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[28]/Q
+                         net (fo=1, routed)           0.214     1.798    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[28]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[28]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[28])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.798    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.154ns  (arrival time - required time)
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[44]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[44]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.164ns (43.566%)  route 0.212ns (56.434%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.127ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    1.441ns
+    Clock Pessimism Removal (CPR):    0.478ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.558     1.441    dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/CLK
+    SLICE_X12Y19         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[44]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y19         FDRE (Prop_fdre_C_Q)         0.164     1.605 r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[44]/Q
+                         net (fo=1, routed)           0.212     1.818    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive_1[44]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[44]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                         clock pessimism             -0.478     1.568    
+    DSP48_X0Y6           DSP48E1 (Hold_dsp48e1_CLK_C[44])
+                                                      0.096     1.664    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive
+  -------------------------------------------------------------------
+                         required time                         -1.664    
+                         arrival time                           1.818    
+  -------------------------------------------------------------------
+                         slack                                  0.154    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I       n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Min Period        n/a     DSP48E1/CLK  n/a            2.154         10.000      7.846      DSP48_X0Y6     dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X11Y15   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[0]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[10]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[11]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[14]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[15]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X13Y19   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[16]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X11Y15   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[0]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X11Y15   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[10]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[10]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[11]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[11]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X11Y15   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[0]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X11Y15   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[0]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[10]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[10]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[11]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y17   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[11]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[12]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X13Y18   dsp/U0/i_synth/i_synth_option.i_synth_model/i_c4/opt_has_pipe.first_q_reg[13]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk
+  To Clock:  
+
+Max Delay             9 Endpoints
+Min Delay             9 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.120ns  (logic 3.964ns (55.667%)  route 3.157ns (44.333%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[1])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[1]
+                         net (fo=1, routed)           3.157     8.762    out_OBUF[1]
+    E19                  OBUF (Prop_obuf_I_O)         3.530    12.292 r  out_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    12.292    out[1]
+    E19                                                               r  out[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.653ns  (logic 3.938ns (59.192%)  route 2.715ns (40.808%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[8])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[8]
+                         net (fo=1, routed)           2.715     8.321    out_OBUF[8]
+    V13                  OBUF (Prop_obuf_I_O)         3.504    11.825 r  out_OBUF[8]_inst/O
+                         net (fo=0)                   0.000    11.825    out[8]
+    V13                                                               r  out[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.622ns  (logic 3.939ns (59.483%)  route 2.683ns (40.517%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[0]
+                         net (fo=1, routed)           2.683     8.289    out_OBUF[0]
+    U16                  OBUF (Prop_obuf_I_O)         3.505    11.793 r  out_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    11.793    out[0]
+    U16                                                               r  out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.531ns  (logic 3.940ns (60.332%)  route 2.591ns (39.668%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[6])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[6]
+                         net (fo=1, routed)           2.591     8.196    out_OBUF[6]
+    U14                  OBUF (Prop_obuf_I_O)         3.506    11.703 r  out_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    11.703    out[6]
+    U14                                                               r  out[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.528ns  (logic 3.935ns (60.278%)  route 2.593ns (39.722%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[7])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[7]
+                         net (fo=1, routed)           2.593     8.199    out_OBUF[7]
+    V14                  OBUF (Prop_obuf_I_O)         3.501    11.699 r  out_OBUF[7]_inst/O
+                         net (fo=0)                   0.000    11.699    out[7]
+    V14                                                               r  out[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.484ns  (logic 3.948ns (60.900%)  route 2.535ns (39.100%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[5])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[5]
+                         net (fo=1, routed)           2.535     8.141    out_OBUF[5]
+    U15                  OBUF (Prop_obuf_I_O)         3.514    11.655 r  out_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    11.655    out[5]
+    U15                                                               r  out[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.276ns  (logic 3.935ns (62.694%)  route 2.341ns (37.306%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[2])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[2]
+                         net (fo=1, routed)           2.341     7.947    out_OBUF[2]
+    U19                  OBUF (Prop_obuf_I_O)         3.501    11.448 r  out_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    11.448    out[2]
+    U19                                                               r  out[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.251ns  (logic 3.943ns (63.078%)  route 2.308ns (36.922%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[3]
+                         net (fo=1, routed)           2.308     7.914    out_OBUF[3]
+    V19                  OBUF (Prop_obuf_I_O)         3.509    11.423 r  out_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    11.423    out[3]
+    V19                                                               r  out[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.217ns  (logic 3.943ns (63.418%)  route 2.274ns (36.582%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.651     5.172    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.434     5.606 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[4]
+                         net (fo=1, routed)           2.274     7.880    out_OBUF[4]
+    W18                  OBUF (Prop_obuf_I_O)         3.509    11.389 r  out_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    11.389    out[4]
+    W18                                                               r  out[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.937ns  (logic 1.336ns (68.958%)  route 0.601ns (31.042%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[4])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[4]
+                         net (fo=1, routed)           0.601     2.261    out_OBUF[4]
+    W18                  OBUF (Prop_obuf_I_O)         1.210     3.471 r  out_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     3.471    out[4]
+    W18                                                               r  out[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.954ns  (logic 1.328ns (67.983%)  route 0.625ns (32.017%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[2])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[2]
+                         net (fo=1, routed)           0.625     2.285    out_OBUF[2]
+    U19                  OBUF (Prop_obuf_I_O)         1.202     3.487 r  out_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     3.487    out[2]
+    U19                                                               r  out[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.957ns  (logic 1.336ns (68.271%)  route 0.621ns (31.729%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[3]
+                         net (fo=1, routed)           0.621     2.281    out_OBUF[3]
+    V19                  OBUF (Prop_obuf_I_O)         1.210     3.491 r  out_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     3.491    out[3]
+    V19                                                               r  out[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.073ns  (logic 1.342ns (64.725%)  route 0.731ns (35.275%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[5])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[5]
+                         net (fo=1, routed)           0.731     2.391    out_OBUF[5]
+    U15                  OBUF (Prop_obuf_I_O)         1.216     3.606 r  out_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     3.606    out[5]
+    U15                                                               r  out[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.080ns  (logic 1.328ns (63.848%)  route 0.752ns (36.152%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[7])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[7]
+                         net (fo=1, routed)           0.752     2.411    out_OBUF[7]
+    V14                  OBUF (Prop_obuf_I_O)         1.202     3.613 r  out_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     3.613    out[7]
+    V14                                                               r  out[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.090ns  (logic 1.333ns (63.798%)  route 0.757ns (36.202%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[6])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[6]
+                         net (fo=1, routed)           0.757     2.416    out_OBUF[6]
+    U14                  OBUF (Prop_obuf_I_O)         1.207     3.624 r  out_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     3.624    out[6]
+    U14                                                               r  out[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.112ns  (logic 1.331ns (63.025%)  route 0.781ns (36.975%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[8])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[8]
+                         net (fo=1, routed)           0.781     2.441    out_OBUF[8]
+    V13                  OBUF (Prop_obuf_I_O)         1.205     3.646 r  out_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     3.646    out[8]
+    V13                                                               r  out[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.116ns  (logic 1.332ns (62.951%)  route 0.784ns (37.049%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[0]
+                         net (fo=1, routed)           0.784     2.444    out_OBUF[0]
+    U16                  OBUF (Prop_obuf_I_O)         1.206     3.649 r  out_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     3.649    out[0]
+    U16                                                               r  out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            out[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.370ns  (logic 1.357ns (57.235%)  route 1.014ns (42.765%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.650     1.534    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1 (Prop_dsp48e1_CLK_P[1])
+                                                      0.126     1.660 r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[1]
+                         net (fo=1, routed)           1.014     2.673    out_OBUF[1]
+    E19                  OBUF (Prop_obuf_I_O)         1.231     3.904 r  out_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     3.904    out[1]
+    E19                                                               r  out[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk
+
+Max Delay            52 Endpoints
+Min Delay            52 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[3]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.129ns  (logic 1.454ns (28.357%)  route 3.675ns (71.643%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          3.675     5.129    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[20]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.084ns  (logic 1.453ns (28.579%)  route 3.631ns (71.421%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U1                                                0.000     0.000 r  a[3] (IN)
+                         net (fo=0)                   0.000     0.000    a[3]
+    U1                   IBUF (Prop_ibuf_I_O)         1.453     1.453 r  a_IBUF[3]_inst/O
+                         net (fo=27, routed)          3.631     5.084    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[20]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[21]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.084ns  (logic 1.453ns (28.579%)  route 3.631ns (71.421%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U1                                                0.000     0.000 r  a[3] (IN)
+                         net (fo=0)                   0.000     0.000    a[3]
+    U1                   IBUF (Prop_ibuf_I_O)         1.453     1.453 r  a_IBUF[3]_inst/O
+                         net (fo=27, routed)          3.631     5.084    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[21]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[12]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.075ns  (logic 1.453ns (28.630%)  route 3.622ns (71.370%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U1                                                0.000     0.000 r  a[3] (IN)
+                         net (fo=0)                   0.000     0.000    a[3]
+    U1                   IBUF (Prop_ibuf_I_O)         1.453     1.453 r  a_IBUF[3]_inst/O
+                         net (fo=27, routed)          3.622     5.075    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[13]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.075ns  (logic 1.453ns (28.630%)  route 3.622ns (71.370%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U1                                                0.000     0.000 r  a[3] (IN)
+                         net (fo=0)                   0.000     0.000    a[3]
+    U1                   IBUF (Prop_ibuf_I_O)         1.453     1.453 r  a_IBUF[3]_inst/O
+                         net (fo=27, routed)          3.622     5.075    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[10]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.056ns  (logic 1.454ns (28.769%)  route 3.601ns (71.231%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          3.601     5.056    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.056ns  (logic 1.454ns (28.769%)  route 3.601ns (71.231%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          3.601     5.056    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[7]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.991ns  (logic 1.454ns (29.142%)  route 3.536ns (70.858%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          3.536     4.991    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[6]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.990ns  (logic 1.454ns (29.148%)  route 3.536ns (70.852%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         1.454     1.454 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          3.536     4.990    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[10]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.940ns  (logic 1.453ns (29.413%)  route 3.487ns (70.587%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        4.875ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.875ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U1                                                0.000     0.000 r  a[3] (IN)
+                         net (fo=0)                   0.000     0.000    a[3]
+    U1                   IBUF (Prop_ibuf_I_O)         1.453     1.453 r  a_IBUF[3]_inst/O
+                         net (fo=27, routed)          3.487     4.940    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862     3.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          1.534     4.875    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 c[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.787ns  (logic 0.217ns (27.539%)  route 0.570ns (72.461%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        1.957ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W17                                               0.000     0.000 r  c[3] (IN)
+                         net (fo=0)                   0.000     0.000    c[3]
+    W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 r  c_IBUF[3]_inst/O
+                         net (fo=1, routed)           0.570     0.787    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/C[3]
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.830     1.957    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X8Y15          FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[3]/C
+
+Slack:                    inf
+  Source:                 c[0]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.803ns  (logic 0.221ns (27.512%)  route 0.582ns (72.488%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        1.957ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  c[0] (IN)
+                         net (fo=0)                   0.000     0.000    c[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  c_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.582     0.803    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/C[0]
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.830     1.957    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[0]/C
+
+Slack:                    inf
+  Source:                 c[1]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.814ns  (logic 0.229ns (28.168%)  route 0.585ns (71.832%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        1.957ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V16                                               0.000     0.000 r  c[1] (IN)
+                         net (fo=0)                   0.000     0.000    c[1]
+    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  c_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.585     0.814    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/C[1]
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.830     1.957    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[1]/C
+
+Slack:                    inf
+  Source:                 c[2]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.873ns  (logic 0.232ns (26.561%)  route 0.641ns (73.439%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        1.957ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 r  c[2] (IN)
+                         net (fo=0)                   0.000     0.000    c[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 r  c_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.641     0.873    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/C[2]
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.830     1.957    dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/CLK
+    SLICE_X10Y15         FDRE                                         r  dsp/U0/i_synth/i_synth_option.i_synth_model/i_has_c.i_c3/opt_has_pipe.first_q_reg[2]/C
+
+Slack:                    inf
+  Source:                 b[1]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[1]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.956ns  (logic 0.218ns (22.803%)  route 0.738ns (77.197%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W14                                               0.000     0.000 r  b[1] (IN)
+                         net (fo=0)                   0.000     0.000    b[1]
+    W14                  IBUF (Prop_ibuf_I_O)         0.218     0.218 r  b_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.738     0.956    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[1]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[0]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[0]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.964ns  (logic 0.234ns (24.289%)  route 0.729ns (75.711%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V15                                               0.000     0.000 r  b[0] (IN)
+                         net (fo=0)                   0.000     0.000    b[0]
+    V15                  IBUF (Prop_ibuf_I_O)         0.234     0.234 r  b_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.729     0.964    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[0]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[2]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[2]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.967ns  (logic 0.227ns (23.460%)  route 0.740ns (76.540%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W13                                               0.000     0.000 r  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    b[2]
+    W13                  IBUF (Prop_ibuf_I_O)         0.227     0.227 r  b_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.740     0.967    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[2]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 a[1]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[1]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.609ns  (logic 0.232ns (14.410%)  route 1.377ns (85.590%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R3                                                0.000     0.000 r  a[1] (IN)
+                         net (fo=0)                   0.000     0.000    a[1]
+    R3                   IBUF (Prop_ibuf_I_O)         0.232     0.232 r  a_IBUF[1]_inst/O
+                         net (fo=1, routed)           1.377     1.609    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/A[1]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[16]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.722ns  (logic 0.223ns (12.923%)  route 1.500ns (87.077%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         0.223     0.223 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          1.500     1.722    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+Slack:                    inf
+  Source:                 b[3]
+                            (input port)
+  Destination:            dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.722ns  (logic 0.223ns (12.923%)  route 1.500ns (87.077%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.046ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.046ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V2                                                0.000     0.000 r  b[3] (IN)
+                         net (fo=0)                   0.000     0.000    b[3]
+    V2                   IBUF (Prop_ibuf_I_O)         0.223     0.223 r  b_IBUF[3]_inst/O
+                         net (fo=15, routed)          1.500     1.722    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/B[3]
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=61, routed)          0.918     2.046    dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/CLK
+    DSP48_X0Y6           DSP48E1                                      r  dsp/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/CLK
+
+
+
+
+

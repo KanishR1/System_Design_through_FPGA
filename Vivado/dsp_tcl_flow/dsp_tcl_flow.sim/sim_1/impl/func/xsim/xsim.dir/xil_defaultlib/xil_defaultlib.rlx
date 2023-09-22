@@ -1,0 +1,6 @@
+0.7
+2020.2
+May  7 2023
+15:10:42
+/home/kanish/System_Design_through_FPGA/Vivado/dsp_tcl_flow/dsp_tcl_flow.sim/sim_1/impl/func/xsim/mac_tb_func_impl.v,1694337987,verilog,,/home/kanish/mac_tb.v,,dsp_macro_0;dsp_macro_0_dsp_macro_synth;dsp_macro_0_dsp_macro_v1_0_3;dsp_macro_0_dsp_macro_v1_0_3_viv;dsp_macro_0_xbip_dsp48e1_wrapper_v3_0;dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized1;dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized2;dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized4;dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized4_1;dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized6_0;glbl;mac,,,,,,,,
+/home/kanish/mac_tb.v,1694323772,verilog,,,,mac_tb,,,,,,,,

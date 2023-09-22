@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-// Date        : Sun Sep 10 02:29:11 2023
+// Date        : Sun Sep 10 12:10:18 2023
 // Host        : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               /home/kanish/System_Design_through_FPGA/Vivado/mac_macro/mac_macro.sim/sim_1/synth/func/xsim/mac_tb_func_synth.v
@@ -356,7 +356,7 @@ module xil_internal_svlib_MACC_MACRO
   wire [3:0]\NLW_dsp_bl.DSP48E_BL_CARRYOUT_UNCONNECTED ;
   wire [47:0]\NLW_dsp_bl.DSP48E_BL_PCOUT_UNCONNECTED ;
 
-  (* BOX_TYPE = "PRIMITIVE" *) 
+  (* box_type = "PRIMITIVE" *) 
   DSP48E1 #(
     .ACASCREG(1),
     .ADREG(0),

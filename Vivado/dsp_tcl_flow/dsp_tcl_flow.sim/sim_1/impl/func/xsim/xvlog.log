@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kanish/System_Design_through_FPGA/Vivado/dsp_tcl_flow/dsp_tcl_flow.sim/sim_1/impl/func/xsim/mac_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dsp_macro_0
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_dsp_macro_synth
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_dsp_macro_v1_0_3
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_dsp_macro_v1_0_3_viv
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized4
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized4_1
+INFO: [VRFC 10-311] analyzing module dsp_macro_0_xbip_pipe_v3_0_6_viv__parameterized6_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kanish/mac_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_tb
