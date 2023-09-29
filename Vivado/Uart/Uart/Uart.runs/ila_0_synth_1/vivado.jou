@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Sep 15 11:29:08 2023
+# Process ID: 6459
+# Current directory: /home/bhargav/Documents/My_work/Term1/FPGA/Uart/Uart/Uart.runs/ila_0_synth_1
+# Command line: vivado -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file: /home/bhargav/Documents/My_work/Term1/FPGA/Uart/Uart/Uart.runs/ila_0_synth_1/ila_0.vds
+# Journal file: /home/bhargav/Documents/My_work/Term1/FPGA/Uart/Uart/Uart.runs/ila_0_synth_1/vivado.jou
+# Running On: HP-Laptop, OS: Linux, CPU Frequency: 3066.632 MHz, CPU Physical cores: 2, Host memory: 7946 MB
+#-----------------------------------------------------------
+source ila_0.tcl -notrace

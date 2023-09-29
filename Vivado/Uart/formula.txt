@@ -1,0 +1,1 @@
+clock wizard=baud_rate * oversampling factor * clk divider factor

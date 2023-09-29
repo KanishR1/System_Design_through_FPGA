@@ -66,7 +66,7 @@ module uart_rx #(
     assign oversampled_data_valid = (buf_idx == (OVERSAMPLE-1));
     
     //Checking if the effective bit is 0 
-    assign frame_start_condition = !obtained_bit(input_buffer);
+    assign frame_start_condition = !obtained_bit(input_buffer); //===========================================================================
     
     //Detect if a UART RX Transaction has started 
     always @(posedge i_clk) begin
@@ -74,7 +74,7 @@ module uart_rx #(
             if(i_reset)
                 frame_start <= 1'b0;
             else begin
-                if(oversampled_data_valid & frame_start_condition & frame_idx < (N_DATA_BITS-1))
+                if(oversampled_data_valid & frame_start_condition & frame_idx < (N_DATA_BITS-1)) //==============================================
                     frame_start <= 1'b1;
                 else if(frame_start & oversampled_data_valid & (frame_idx == N_DATA_BITS))
                     frame_start <= 1'b0;
@@ -89,7 +89,7 @@ module uart_rx #(
             if(i_reset)
                 frame_idx <= 'd0;
             else begin
-                if(frame_start & oversampled_data_valid)
+                if(frame_start & oversampled_data_valid) //=====================================================================================
                     frame_idx <= frame_idx + 'd1;
                 else if(!frame_start)
                     frame_idx <= 'd0;
