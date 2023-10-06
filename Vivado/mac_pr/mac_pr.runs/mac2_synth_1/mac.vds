@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  6 23:00:49 2023
+# Process ID: 26983
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac2_synth_1
+# Command line: vivado -log mac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac2_synth_1/mac.vds
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac2_synth_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 2300.001 MHz, CPU Physical cores: 4, Host memory: 8100 MB
+#-----------------------------------------------------------
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1297.602 ; gain = 19.023 ; free physical = 132 ; free virtual = 3393
+Command: synth_design -top mac -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27100
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1713.090 ; gain = 391.676 ; free physical = 119 ; free virtual = 1892
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:34]
+INFO: [Synth 8-6157] synthesizing module 'and_res_gen' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:95]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'and_mod' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'and_mod' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'and_res_gen' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:95]
+INFO: [Synth 8-6157] synthesizing module 'rca' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:65]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter APPROXIMATION bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'approx' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'approx' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:88]
+INFO: [Synth 8-6157] synthesizing module 'fa' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac2/imports/verilog_files/mac2.v:23]
+WARNING: [Synth 8-7129] Port A in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cin in module approx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1780.059 ; gain = 458.645 ; free physical = 140 ; free virtual = 654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1797.871 ; gain = 476.457 ; free physical = 154 ; free virtual = 518
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1805.875 ; gain = 484.461 ; free physical = 154 ; free virtual = 518
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1814.781 ; gain = 493.367 ; free physical = 141 ; free virtual = 354
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 30    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------

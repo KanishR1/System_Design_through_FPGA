@@ -1,0 +1,22 @@
+Command: pr_verify -full_check -initial C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/impl_1/top_routed.dcp -additional C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/child_0_impl_1/top_routed.dcp -file child_0_impl_1_pr_verify.log
+Fri Oct  6 22:13:29 2023
+
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/impl_1/top_routed.dcp
+  Number of reconfigurable modules compared = 2
+  Number of partition pins compared         = 160
+  Number of static tiles compared           = 3468
+  Number of static sites compared           = 370
+  Number of static cells compared           = 2369
+  Number of static routed nodes compared    = 20723
+  Number of static routed pips compared     = 18763
+
+DCP2: C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/child_0_impl_1/top_routed.dcp
+  Number of reconfigurable modules compared = 2
+  Number of partition pins compared         = 160
+  Number of static tiles compared           = 3468
+  Number of static sites compared           = 370
+  Number of static cells compared           = 2369
+  Number of static routed nodes compared    = 20723
+  Number of static routed pips compared     = 18763
+INFO: [Vivado 12-3253] PR_VERIFY: check points C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/impl_1/top_routed.dcp and C:/Users/alwinshaju/mac_c_new/mac_c_new.runs/child_0_impl_1/top_routed.dcp are compatible

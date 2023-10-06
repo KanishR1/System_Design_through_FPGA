@@ -1,0 +1,78 @@
+
+*** Running vivado
+    with args -log mac.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1297.629 ; gain = 19.023 ; free physical = 126 ; free virtual = 3521
+Command: synth_design -top mac -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27057
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1716.086 ; gain = 394.645 ; free physical = 119 ; free virtual = 1883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:34]
+INFO: [Synth 8-6157] synthesizing module 'and_res_gen' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:95]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'and_mod' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'and_mod' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'and_res_gen' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:95]
+INFO: [Synth 8-6157] synthesizing module 'rca' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:65]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter APPROXIMATION bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'approx' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'approx' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:88]
+INFO: [Synth 8-6157] synthesizing module 'fa' [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.srcs/mac3/imports/verilog_files/mac3.v:23]
+WARNING: [Synth 8-7129] Port A in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cin in module approx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1780.055 ; gain = 458.613 ; free physical = 122 ; free virtual = 676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1794.898 ; gain = 473.457 ; free physical = 132 ; free virtual = 527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1802.902 ; gain = 481.461 ; free physical = 128 ; free virtual = 525
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1810.910 ; gain = 489.469 ; free physical = 141 ; free virtual = 354
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 45    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------

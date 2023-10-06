@@ -1,0 +1,211 @@
+
+*** Running vivado
+    with args -log mac.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1335.793 ; gain = 0.023 ; free physical = 127 ; free virtual = 2995
+Command: synth_design -top mac -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 74519
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1712.594 ; gain = 376.801 ; free physical = 139 ; free virtual = 1748
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:33]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter APPROXIMATION bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'and_res_gen' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:94]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'and_mod' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'and_mod' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'and_res_gen' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:94]
+INFO: [Synth 8-6157] synthesizing module 'rca' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:64]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+	Parameter APPROXIMATION bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'approx' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'approx' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:87]
+INFO: [Synth 8-6157] synthesizing module 'fa' [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.srcs/mac3/imports/new/mac2.v:23]
+WARNING: [Synth 8-7129] Port A in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B in module approx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Cin in module approx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1780.562 ; gain = 444.770 ; free physical = 411 ; free virtual = 1857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1795.406 ; gain = 459.613 ; free physical = 408 ; free virtual = 1856
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1803.410 ; gain = 467.617 ; free physical = 405 ; free virtual = 1857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1812.316 ; gain = 476.523 ; free physical = 392 ; free virtual = 1850
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 45    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 1294 ; free virtual = 2864
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 1293 ; free virtual = 2864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 1293 ; free virtual = 2864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     5|
+|2     |LUT2   |     3|
+|3     |LUT3   |     1|
+|4     |LUT4   |     1|
+|5     |LUT5   |     5|
+|6     |LUT6   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    47|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2517 ; free virtual = 4121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.699 ; gain = 602.906 ; free physical = 2516 ; free virtual = 4120
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1938.707 ; gain = 602.906 ; free physical = 2516 ; free virtual = 4120
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1948.605 ; gain = 0.000 ; free physical = 2758 ; free virtual = 4364
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2082.320 ; gain = 0.000 ; free physical = 2691 ; free virtual = 4299
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8c9ed09b
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2082.320 ; gain = 746.527 ; free physical = 2691 ; free virtual = 4299
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1462.703; main = 1209.145; forked = 369.025
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2888.109; main = 2082.324; forked = 949.406
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/MUL_new2/MUL_new2.runs/mac3_synth_1/mac.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2460.305 ; gain = 377.984 ; free physical = 2438 ; free virtual = 4071
+INFO: [runtcl-4] Executing : report_utilization -file mac_utilization_synth.rpt -pb mac_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 17:09:12 2023...

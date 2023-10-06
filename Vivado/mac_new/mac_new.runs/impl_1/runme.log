@@ -1,0 +1,80 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: open_checkpoint /home/kanish/System_Design_through_FPGA/Vivado/mac_new/mac_new.runs/impl_1/top.dcp
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1644.199 ; gain = 0.000 ; free physical = 858 ; free virtual = 4649
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2173.715 ; gain = 0.000 ; free physical = 325 ; free virtual = 4118
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1 (64-bit) build 3865809
+open_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2173.715 ; gain = 893.547 ; free physical = 325 ; free virtual = 4118
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/GND_HD_Inserted_Net_R_31_ has multiple drivers: M0/GND_HD_Inserted_Inst_R_31_/O, and M15/GND_HD_Inserted_Inst_R_31_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[0] has multiple drivers: M0/R[0]_INST_0/O[0], and M15/R[0]_INST_0/O[0].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[10] has multiple drivers: M15/R[8]_INST_0/O[2], and M0/R[8]_INST_0/O[2].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[11] has multiple drivers: M15/R[8]_INST_0/O[3], and M0/R[8]_INST_0/O[3].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[12] has multiple drivers: M0/R[12]_INST_0/O[0], and M15/R[12]_INST_0/O[0].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[13] has multiple drivers: M0/R[12]_INST_0/O[1], and M15/R[12]_INST_0/O[1].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[14] has multiple drivers: M0/R[12]_INST_0/O[2], and M15/R[12]_INST_0/O[2].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[15] has multiple drivers: M0/R[12]_INST_0/O[3], and M15/R[12]_INST_0/O[3].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[16] has multiple drivers: M0/R[16]_INST_0/CO[0], and M15/R[16]_INST_0/CO[0].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[17] has multiple drivers: M0/GND_HD_Inserted_Inst_R_17_/O, and M15/R[17]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[18] has multiple drivers: M0/GND_HD_Inserted_Inst_R_18_/O, and M15/R[18]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[19] has multiple drivers: M15/R[19]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_19_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[1] has multiple drivers: M0/R[0]_INST_0/O[1], and M15/R[0]_INST_0/O[1].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[20] has multiple drivers: M15/R[20]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_20_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[21] has multiple drivers: M15/R[21]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_21_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[22] has multiple drivers: M15/R[22]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_22_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[23] has multiple drivers: M15/R[23]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_23_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[24] has multiple drivers: M15/R[24]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_24_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[25] has multiple drivers: M15/R[25]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_25_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[26] has multiple drivers: M15/R[26]_INST_0/O, and M0/GND_HD_Inserted_Inst_R_26_/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[27] has multiple drivers: M0/R[27]_INST_0/O, and M15/R[27]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[28] has multiple drivers: M15/R[28]_INST_0/O, and M0/R[28]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[29] has multiple drivers: M0/R[29]_INST_0/O, and M15/R[29]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[2] has multiple drivers: M0/R[0]_INST_0/O[2], and M15/R[0]_INST_0/O[2].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[30] has multiple drivers: M0/R[30]_INST_0/O, and M15/R[30]_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[3] has multiple drivers: M0/R[0]_INST_0/O[3], and M15/R[0]_INST_0/O[3].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[4] has multiple drivers: M0/R[4]_INST_0/O[0], and M15/R[4]_INST_0/O[0].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[5] has multiple drivers: M0/R[4]_INST_0/O[1], and M15/R[4]_INST_0/O[1].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[6] has multiple drivers: M0/R[4]_INST_0/O[2], and M15/R[4]_INST_0/O[2].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[7] has multiple drivers: M0/R[4]_INST_0/O[3], and M15/R[4]_INST_0/O[3].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[8] has multiple drivers: M15/R[8]_INST_0/O[0], and M0/R[8]_INST_0/O[0].
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net M15/R[9] has multiple drivers: M15/R[8]_INST_0/O[1], and M0/R[8]_INST_0/O[1].
+INFO: [Project 1-461] DRC finished with 32 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.87 . Memory (MB): peak = 2256.590 ; gain = 82.875 ; free physical = 310 ; free virtual = 4103
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 0 Warnings, 0 Critical Warnings and 33 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 16:53:21 2023...

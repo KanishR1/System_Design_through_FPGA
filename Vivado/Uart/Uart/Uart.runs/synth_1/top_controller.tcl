@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -94,7 +91,7 @@ read_verilog -library xil_defaultlib -sv {
   /home/kanish/System_Design_through_FPGA/Vivado/Uart/uart_rx.sv
   /home/kanish/System_Design_through_FPGA/Vivado/Uart/top_controller.sv
 }
-read_verilog -library xil_defaultlib /home/kanish/Desktop/uart_tx/uart_tx.srcs/sources_1/imports/Downloads/uart_tx.v
+read_verilog -library xil_defaultlib /home/kanish/System_Design_through_FPGA/Vivado/Uart/Uart/Uart.srcs/sources_1/imports/Downloads/uart_tx.v
 read_ip -quiet /home/kanish/System_Design_through_FPGA/Vivado/project_7segmentdisplayuart_updated/project_7segmentdisplayuart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all /home/kanish/System_Design_through_FPGA/Vivado/project_7segmentdisplayuart_updated/project_7segmentdisplayuart.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 

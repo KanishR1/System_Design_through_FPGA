@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  6 23:00:49 2023
+# Process ID: 26975
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac5_synth_1
+# Command line: vivado -log mac.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac5_synth_1/mac.vds
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/mac_pr/mac_pr.runs/mac5_synth_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 4, Host memory: 8100 MB
+#-----------------------------------------------------------
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1335.688 ; gain = 0.023 ; free physical = 137 ; free virtual = 2217
+Command: synth_design -top mac -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27184

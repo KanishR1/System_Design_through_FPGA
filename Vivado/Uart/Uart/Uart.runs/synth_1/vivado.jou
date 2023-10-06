@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Sep 29 12:42:50 2023
-# Process ID: 64413
+# Start of session at: Sat Sep 30 20:25:42 2023
+# Process ID: 66257
 # Current directory: /home/kanish/System_Design_through_FPGA/Vivado/Uart/Uart/Uart.runs/synth_1
 # Command line: vivado -log top_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_controller.tcl
 # Log file: /home/kanish/System_Design_through_FPGA/Vivado/Uart/Uart/Uart.runs/synth_1/top_controller.vds
 # Journal file: /home/kanish/System_Design_through_FPGA/Vivado/Uart/Uart/Uart.runs/synth_1/vivado.jou
-# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4123.020 MHz, CPU Physical cores: 4, Host memory: 8101 MB
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 2723.519 MHz, CPU Physical cores: 4, Host memory: 8101 MB
 #-----------------------------------------------------------
 source top_controller.tcl -notrace
