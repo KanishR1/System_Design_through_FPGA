@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="impl_1" LaunchDir="/home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Run Id="child_0_impl_1" LaunchDir="/home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/child_0_impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Run Id="child_1_impl_1" LaunchDir="/home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/child_1_impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

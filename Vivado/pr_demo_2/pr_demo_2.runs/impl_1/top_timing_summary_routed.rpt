@@ -1,0 +1,505 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Fri Oct 13 19:22:53 2023
+| Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule   Severity  Description                                   Violations  
+-----  --------  --------------------------------------------  ----------  
+DFX-1  Warning   Multiple Reconfigurable Modules Share Driver  2           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    6          inf        0.000                      0                    6           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             6 Endpoints
+Min Delay             6 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            s1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        17.046ns  (logic 5.089ns (29.855%)  route 11.957ns (70.145%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 r  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 r  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           6.778     8.239    boundary                            hs/a
+    SLICE_X54Y100        LUT2 (Prop_lut2_I1_O)        0.124     8.363 r  reconfigurable pblock_hs            hs/s_INST_0/O
+                         net (fo=1, routed)           5.179    13.542    boundary                            s1_OBUF
+    U3                   OBUF (Prop_obuf_I_O)         3.504    17.046 r  static                              s1_OBUF_inst/O
+                         net (fo=0)                   0.000    17.046    static                              s1
+    U3                                                                r  static                              s1 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            c1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.536ns  (logic 5.103ns (32.849%)  route 10.433ns (67.151%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 f  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 f  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           6.786     8.247    boundary                            hs/a
+    SLICE_X54Y100        LUT2 (Prop_lut2_I1_O)        0.124     8.371 r  reconfigurable pblock_hs            hs/c_INST_0/O
+                         net (fo=1, routed)           3.647    12.018    boundary                            c1_OBUF
+    P3                   OBUF (Prop_obuf_I_O)         3.518    15.536 r  static                              c1_OBUF_inst/O
+                         net (fo=0)                   0.000    15.536    static                              c1
+    P3                                                                r  static                              c1 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            c0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.028ns  (logic 5.098ns (36.344%)  route 8.930ns (63.656%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           4.657     6.110    boundary                            ha/b
+    SLICE_X48Y49         LUT2 (Prop_lut2_I1_O)        0.124     6.234 r  reconfigurable pblock_ha            ha/c_INST_0/O
+                         net (fo=1, routed)           4.273    10.506    boundary                            c0_OBUF
+    L1                   OBUF (Prop_obuf_I_O)         3.521    14.028 r  static                              c0_OBUF_inst/O
+                         net (fo=0)                   0.000    14.028    static                              c0
+    L1                                                                r  static                              c0 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            s2
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.890ns  (logic 5.081ns (36.579%)  route 8.809ns (63.421%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           4.141     5.594    boundary                            comp/b
+    SLICE_X37Y50         LUT2 (Prop_lut2_I0_O)        0.124     5.718 r  reconfigurable pblock_comp          comp/s_INST_0/O
+                         net (fo=1, routed)           4.668    10.386    boundary                            s2_OBUF
+    V13                  OBUF (Prop_obuf_I_O)         3.504    13.890 r  static                              s2_OBUF_inst/O
+                         net (fo=0)                   0.000    13.890    static                              s2
+    V13                                                               r  static                              s2 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            s0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.834ns  (logic 5.092ns (39.677%)  route 7.742ns (60.323%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           4.649     6.102    boundary                            ha/b
+    SLICE_X48Y49         LUT2 (Prop_lut2_I0_O)        0.124     6.226 r  reconfigurable pblock_ha            ha/s_INST_0/O
+                         net (fo=1, routed)           3.093     9.319    boundary                            s0_OBUF
+    P1                   OBUF (Prop_obuf_I_O)         3.515    12.834 r  static                              s0_OBUF_inst/O
+                         net (fo=0)                   0.000    12.834    static                              s0
+    P1                                                                r  static                              s0 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            c2
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.579ns  (logic 5.085ns (40.425%)  route 7.494ns (59.575%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           4.139     5.592    boundary                            comp/b
+    SLICE_X37Y50         LUT2 (Prop_lut2_I0_O)        0.124     5.716 r  reconfigurable pblock_comp          comp/c_INST_0/O
+                         net (fo=1, routed)           3.355     9.071    boundary                            c2_OBUF
+    V3                   OBUF (Prop_obuf_I_O)         3.508    12.579 r  static                              c2_OBUF_inst/O
+                         net (fo=0)                   0.000    12.579    static                              c2
+    V3                                                                r  static                              c2 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            c2
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.282ns  (logic 1.484ns (34.651%)  route 2.798ns (65.349%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 r  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           1.690     1.919    boundary                            comp/a
+    SLICE_X37Y50         LUT2 (Prop_lut2_I1_O)        0.045     1.964 r  reconfigurable pblock_comp          comp/c_INST_0/O
+                         net (fo=1, routed)           1.109     3.072    boundary                            c2_OBUF
+    V3                   OBUF (Prop_obuf_I_O)         1.209     4.282 r  static                              c2_OBUF_inst/O
+                         net (fo=0)                   0.000     4.282    static                              c2
+    V3                                                                r  static                              c2 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            s0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.315ns  (logic 1.491ns (34.547%)  route 2.825ns (65.453%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 r  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           1.884     2.114    boundary                            ha/a
+    SLICE_X48Y49         LUT2 (Prop_lut2_I1_O)        0.045     2.159 r  reconfigurable pblock_ha            ha/s_INST_0/O
+                         net (fo=1, routed)           0.940     3.099    boundary                            s0_OBUF
+    P1                   OBUF (Prop_obuf_I_O)         1.216     4.315 r  static                              s0_OBUF_inst/O
+                         net (fo=0)                   0.000     4.315    static                              s0
+    P1                                                                r  static                              s0 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            s2
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.899ns  (logic 1.480ns (30.202%)  route 3.419ns (69.798%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 r  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           1.690     1.919    boundary                            comp/a
+    SLICE_X37Y50         LUT2 (Prop_lut2_I1_O)        0.045     1.964 r  reconfigurable pblock_comp          comp/s_INST_0/O
+                         net (fo=1, routed)           1.730     3.694    boundary                            s2_OBUF
+    V13                  OBUF (Prop_obuf_I_O)         1.205     4.899 r  static                              s2_OBUF_inst/O
+                         net (fo=0)                   0.000     4.899    static                              s2
+    V13                                                               r  static                              s2 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 a
+                            (input port)
+  Destination:            c0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        4.973ns  (logic 1.497ns (30.099%)  route 3.476ns (69.901%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V16                                               0.000     0.000 r  static                              a (IN)
+                         net (fo=0)                   0.000     0.000    static                              a
+    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  static                              a_IBUF_inst/O
+                         net (fo=6, routed)           1.885     2.115    boundary                            ha/a
+    SLICE_X48Y49         LUT2 (Prop_lut2_I0_O)        0.045     2.160 r  reconfigurable pblock_ha            ha/c_INST_0/O
+                         net (fo=1, routed)           1.591     3.750    boundary                            c0_OBUF
+    L1                   OBUF (Prop_obuf_I_O)         1.222     4.973 r  static                              c0_OBUF_inst/O
+                         net (fo=0)                   0.000     4.973    static                              c0
+    L1                                                                r  static                              c0 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            c1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        5.486ns  (logic 1.485ns (27.069%)  route 4.001ns (72.931%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           2.793     3.014    boundary                            hs/b
+    SLICE_X54Y100        LUT2 (Prop_lut2_I0_O)        0.045     3.059 r  reconfigurable pblock_hs            hs/c_INST_0/O
+                         net (fo=1, routed)           1.208     4.267    boundary                            c1_OBUF
+    P3                   OBUF (Prop_obuf_I_O)         1.219     5.486 r  static                              c1_OBUF_inst/O
+                         net (fo=0)                   0.000     5.486    static                              c1
+    P3                                                                r  static                              c1 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+Slack:                    inf
+  Source:                 b
+                            (input port)
+  Destination:            s1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        6.113ns  (logic 1.471ns (24.060%)  route 4.642ns (75.940%))
+  Logic Levels:           3  (IBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Partition      PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------------------------------------------
+    V17                                               0.000     0.000 r  static                              b (IN)
+                         net (fo=0)                   0.000     0.000    static                              b
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  static                              b_IBUF_inst/O
+                         net (fo=6, routed)           2.791     3.012    boundary                            hs/b
+    SLICE_X54Y100        LUT2 (Prop_lut2_I0_O)        0.045     3.057 r  reconfigurable pblock_hs            hs/s_INST_0/O
+                         net (fo=1, routed)           1.851     4.908    boundary                            s1_OBUF
+    U3                   OBUF (Prop_obuf_I_O)         1.205     6.113 r  static                              s1_OBUF_inst/O
+                         net (fo=0)                   0.000     6.113    static                              s1
+    U3                                                                r  static                              s1 (OUT)
+  -------------------------------------------------------------------    -------------------------------------------------------
+
+
+
+
+

@@ -136,9 +136,10 @@ OPTRACE "set parameters" START { }
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
   add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/impl_1/top_routed_bb.dcp
-  add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_down_synth_1/clock_div_count.dcp
-  set_property SCOPED_TO_CELLS {count_down count_up} [get_files /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_down_synth_1/clock_div_count.dcp]
-  link_design -top top -part xc7a35tcpg236-1 -reconfig_partitions {count_down count_up} 
+  add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/impl_1/count_down_clock_div_count_down_routed.dcp
+  set_property SCOPED_TO_CELLS count_down [get_files /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/impl_1/count_down_clock_div_count_down_routed.dcp]
+  link_design -top top -part xc7a35tcpg236-1 -reconfig_partitions {count_up count_down} 
+  update_design -cell count_up -buffer_ports
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -273,8 +274,8 @@ OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_routed.dcp
 OPTRACE "Route Design: write_checkpoint" END { }
 OPTRACE "route_design misc" START { }
+  write_checkpoint -force -cell count_up count_up_routed.dcp
   write_checkpoint -force -cell count_down count_down_clock_div_count_down_routed.dcp
-  write_checkpoint -force -cell count_up count_up_clock_div_count_down_routed.dcp
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
@@ -300,21 +301,21 @@ set rc [catch {
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   catch { write_mem_info -force -no_partial_mmi top.mmi }
+  catch { write_mem_info -force -cell count_up count_up_partial.mmi }
   catch { write_mem_info -force -cell count_down count_down_clock_div_count_down_partial.mmi }
-  catch { write_mem_info -force -cell count_up count_up_clock_div_count_down_partial.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force -no_partial_bitfile top.bit 
+  write_bitstream -force -cell count_up count_up_greybox_partial.bit 
   write_bitstream -force -cell count_down count_down_clock_div_count_down_partial.bit 
-  write_bitstream -force -cell count_up count_up_clock_div_count_down_partial.bit 
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
 OPTRACE "read constraints: write_bitstream_post" START { }
 OPTRACE "read constraints: write_bitstream_post" END { }
   catch {write_debug_probes -no_partial_ltxfile -quiet -force top}
   catch {file copy -force top.ltx debug_nets.ltx}
+  catch {write_debug_probes -quiet -force -cell count_up -file count_up_greybox_partial.ltx}
   catch {write_debug_probes -quiet -force -cell count_down -file count_down_clock_div_count_down_partial.ltx}
-  catch {write_debug_probes -quiet -force -cell count_up -file count_up_clock_div_count_down_partial.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

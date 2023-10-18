@@ -76,6 +76,7 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.cache/wt [current_project]
 set_property parent.project_path /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
@@ -91,6 +92,10 @@ set_property used_in_implementation false [get_files /home/kanish/System_Design_
 read_xdc hd_reconfig.xdc
 set_property used_in_implementation false [get_files hd_reconfig.xdc]
 read_verilog -library xil_defaultlib /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v
+read_ip -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/ip/vio_0/vio_0.xci
+set_property used_in_implementation false [get_files -all /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.gen/sources_1/ip/vio_0/vio_0.xdc]
+set_property used_in_implementation false [get_files -all /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.gen/sources_1/ip/vio_0/vio_0_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

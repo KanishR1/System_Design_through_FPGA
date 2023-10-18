@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date         : Fri Aug 25 10:36:59 2023
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Tue Oct 17 22:28:54 2023
 | Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_methodology -file mac_methodology_drc_routed.rpt -pb mac_methodology_drc_routed.pb -rpx mac_methodology_drc_routed.rpx
 | Design       : mac
@@ -42,8 +42,8 @@ Related violations: <none>
 XDCC-4#1 Warning
 User Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous user clock constraint with the same name.
-New: create_clock -period 10.750 -name clk -waveform {0.000 5.375} [get_ports clk] (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 56))
-Previous: create_clock -period 10.750 -name clk -waveform {0.000 5.375} -add (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 55))
+New: create_clock -period 10.750 -name clk -waveform {0.000 7.000} [get_ports clk] (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 56))
+Previous: create_clock -period 10.750 -name clk -waveform {0.000 7.000} -add (Source: /home/kanish/System_Design_through_FPGA/Vivado/mac_assign/mac_assign.srcs/constrs_1/new/constraints.xdc (Line: 55))
 Related violations: <none>
 
 XDCH-2#1 Warning

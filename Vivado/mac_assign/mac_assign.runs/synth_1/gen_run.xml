@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1692939947" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/mac.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1697561855" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/mac.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="mac_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="mac.dcp"/>
   <File Type="RDS-UTIL-PB" Name="mac_utilization_synth.pb"/>
@@ -63,9 +63,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Oct  4 01:15:40 2023
-# Process ID: 94810
+# Start of session at: Fri Oct 13 19:45:58 2023
+# Process ID: 18643
 # Current directory: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/top.vds
 # Journal file: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/vivado.jou
-# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4242.308 MHz, CPU Physical cores: 4, Host memory: 8100 MB
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 4298.637 MHz, CPU Physical cores: 4, Host memory: 8101 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.738 ; gain = 18.023 ; free physical = 2324 ; free virtual = 6774
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.773 ; gain = 20.023 ; free physical = 796 ; free virtual = 5785
 Command: read_checkpoint -auto_incremental -incremental /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,27 +25,33 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 95148
+INFO: [Synth 8-7075] Helper process launched with PID 18696
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2024.484 ; gain = 378.801 ; free physical = 1284 ; free virtual = 5789
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2038.238 ; gain = 380.738 ; free physical = 130 ; free virtual = 4812
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clock_div_count' [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-94810-kanish-G3-3500/realtime/clock_div_count_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div_count' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-94810-kanish-G3-3500/realtime/clock_div_count_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_div_count' [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-18643-kanish-G3-3500/realtime/clock_div_count_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div_count' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-18643-kanish-G3-3500/realtime/clock_div_count_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:16]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-18643-kanish-G3-3500/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/.Xil/Vivado-18643-kanish-G3-3500/realtime/vio_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:3]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'count_up'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:8]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:16]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'count_down'. This will prevent further optimization [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/imports/Week14_PR/top.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.453 ; gain = 443.770 ; free physical = 1198 ; free virtual = 5704
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2101.207 ; gain = 443.707 ; free physical = 138 ; free virtual = 4733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2104.297 ; gain = 458.613 ; free physical = 1196 ; free virtual = 5702
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2119.020 ; gain = 461.520 ; free physical = 135 ; free virtual = 4731
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2104.297 ; gain = 458.613 ; free physical = 1196 ; free virtual = 5702
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2119.020 ; gain = 461.520 ; free physical = 135 ; free virtual = 4731
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.297 ; gain = 0.000 ; free physical = 1196 ; free virtual = 5702
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.020 ; gain = 0.000 ; free physical = 135 ; free virtual = 4731
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -54,6 +60,8 @@ Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo
 Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_up_synth_1/clock_div_count/clock_div_count_in_context.xdc] for cell 'count_up'
 Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_up_synth_1/clock_div_count/clock_div_count_in_context.xdc] for cell 'count_down'
 Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_up_synth_1/clock_div_count/clock_div_count_in_context.xdc] for cell 'count_down'
+Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'your_instance_name'
 Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/hd_reconfig.xdc]
 Finished Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/hd_reconfig.xdc]
 Parsing XDC File [/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/constrs_1/imports/Week14_PR/constraints.xdc]
@@ -64,22 +72,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.234 ; gain = 0.000 ; free physical = 1182 ; free virtual = 5689
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2191.957 ; gain = 0.000 ; free physical = 124 ; free virtual = 4721
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.234 ; gain = 0.000 ; free physical = 1182 ; free virtual = 5689
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2191.957 ; gain = 0.000 ; free physical = 124 ; free virtual = 4721
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1179 ; free virtual = 5686
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 122 ; free virtual = 4719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1179 ; free virtual = 5686
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 122 ; free virtual = 4719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -88,11 +96,12 @@ Applied set_property DONT_TOUCH = true for count_down. (constraint file  /home/k
 Applied set_property HD.RECONFIGURABLE = true for count_down. (constraint file  /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/hd_reconfig.xdc, line 5).
 Applied set_property DONT_TOUCH = true for count_up. (constraint file  /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/hd_reconfig.xdc, line 5).
 Applied set_property HD.RECONFIGURABLE = true for count_up. (constraint file  /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/hd_reconfig.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for your_instance_name. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1179 ; free virtual = 5686
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 122 ; free virtual = 4719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1178 ; free virtual = 5686
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 121 ; free virtual = 4718
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -115,26 +124,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1175 ; free virtual = 5687
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 134 ; free virtual = 4712
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 133 ; free virtual = 4711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 133 ; free virtual = 4711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 128 ; free virtual = 4707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -152,37 +161,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -193,6 +202,7 @@ Report BlackBoxes:
 |      |BlackBox name   |Instances |
 +------+----------------+----------+
 |1     |clock_div_count |         2|
+|2     |vio_0           |         1|
 +------+----------------+----------+
 
 Report Cell Usage: 
@@ -200,29 +210,31 @@ Report Cell Usage:
 |      |Cell            |Count |
 +------+----------------+------+
 |1     |clock_div_count |     2|
-|3     |IBUF            |     2|
+|3     |vio             |     1|
+|4     |IBUF            |     2|
+|5     |OBUF            |     8|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2177.234 ; gain = 458.613 ; free physical = 1174 ; free virtual = 5687
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.234 ; gain = 531.551 ; free physical = 1174 ; free virtual = 5687
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2191.957 ; gain = 461.520 ; free physical = 127 ; free virtual = 4713
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2191.957 ; gain = 534.457 ; free physical = 127 ; free virtual = 4713
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.234 ; gain = 0.000 ; free physical = 1174 ; free virtual = 5687
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2191.957 ; gain = 0.000 ; free physical = 126 ; free virtual = 4713
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.234 ; gain = 0.000 ; free physical = 1459 ; free virtual = 5972
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2191.957 ; gain = 0.000 ; free physical = 405 ; free virtual = 4995
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: a0767a20
+Synth Design complete | Checksum: d882ef86
 INFO: [Common 17-83] Releasing license: Synthesis
-24 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2177.234 ; gain = 852.684 ; free physical = 1459 ; free virtual = 5972
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1780.505; main = 1461.467; forked = 377.280
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3123.309; main = 2145.223; forked = 978.086
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2191.957 ; gain = 854.496 ; free physical = 405 ; free virtual = 4995
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1778.928; main = 1462.790; forked = 374.568
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3138.031; main = 2159.945; forked = 978.086
 INFO: [Common 17-1381] The checkpoint '/home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct  4 01:16:11 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 13 19:46:27 2023...

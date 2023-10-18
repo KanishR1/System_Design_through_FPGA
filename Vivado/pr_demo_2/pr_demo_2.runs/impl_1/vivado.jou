@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct 13 19:22:19 2023
+# Process ID: 29118
+# Current directory: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/impl_1/top.vdi
+# Journal file: /home/kanish/System_Design_through_FPGA/Vivado/pr_demo_2/pr_demo_2.runs/impl_1/vivado.jou
+# Running On: kanish-G3-3500, OS: Linux, CPU Frequency: 3518.055 MHz, CPU Physical cores: 4, Host memory: 8100 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1.1 (lin64) Build 3900603 Fri Jun 16 19:30:25 MDT 2023
-| Date         : Fri Aug 25 10:36:59 2023
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Tue Oct 17 22:28:54 2023
 | Host         : kanish-G3-3500 running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file mac_timing_summary_routed.rpt -pb mac_timing_summary_routed.pb -rpx mac_timing_summary_routed.rpx -warn_on_violation
 | Design       : mac
@@ -143,7 +143,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.040        0.000                      0                   16        0.419        0.000                      0                   16        4.875        0.000                       0                     9  
+      0.040        0.000                      0                   16        0.419        0.000                      0                   16        3.250        0.000                       0                     9  
 
 
 All user specified timing constraints are met.
@@ -156,7 +156,7 @@ All user specified timing constraints are met.
 
 Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
 -----  ------------       ----------      --------------
-clk    {0.000 5.375}      10.750          93.023          
+clk    {0.000 7.000}      10.750          93.023          
 
 
 ------------------------------------------------------------------------------------------------
@@ -166,7 +166,7 @@ clk    {0.000 5.375}      10.750          93.023
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk                 0.040        0.000                      0                   16        0.419        0.000                      0                   16        4.875        0.000                       0                     9  
+clk                 0.040        0.000                      0                   16        0.419        0.000                      0                   16        3.250        0.000                       0                     9  
 
 
 ------------------------------------------------------------------------------------------------
@@ -218,7 +218,7 @@ From Clock:  clk
 
 Setup :            0  Failing Endpoints,  Worst Slack        0.040ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.419ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        4.875ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.250ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
@@ -226,9 +226,9 @@ Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.040ns  (required time - arrival time)
   Source:                 out_reg[1]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[1]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -275,9 +275,9 @@ Slack (MET) :             0.040ns  (required time - arrival time)
 
 Slack (MET) :             0.055ns  (required time - arrival time)
   Source:                 out_reg[5]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[5]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -324,9 +324,9 @@ Slack (MET) :             0.055ns  (required time - arrival time)
 
 Slack (MET) :             0.063ns  (required time - arrival time)
   Source:                 out_reg[6]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[6]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -373,9 +373,9 @@ Slack (MET) :             0.063ns  (required time - arrival time)
 
 Slack (MET) :             0.065ns  (required time - arrival time)
   Source:                 out_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[0]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -422,9 +422,9 @@ Slack (MET) :             0.065ns  (required time - arrival time)
 
 Slack (MET) :             0.068ns  (required time - arrival time)
   Source:                 out_reg[7]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[7]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -471,9 +471,9 @@ Slack (MET) :             0.068ns  (required time - arrival time)
 
 Slack (MET) :             0.072ns  (required time - arrival time)
   Source:                 out_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[4]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -520,9 +520,9 @@ Slack (MET) :             0.072ns  (required time - arrival time)
 
 Slack (MET) :             0.073ns  (required time - arrival time)
   Source:                 out_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[3]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -569,9 +569,9 @@ Slack (MET) :             0.073ns  (required time - arrival time)
 
 Slack (MET) :             0.082ns  (required time - arrival time)
   Source:                 out_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[2]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -618,9 +618,9 @@ Slack (MET) :             0.082ns  (required time - arrival time)
 
 Slack (MET) :             3.042ns  (required time - arrival time)
   Source:                 b[3]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[7]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -679,9 +679,9 @@ Slack (MET) :             3.042ns  (required time - arrival time)
 
 Slack (MET) :             3.071ns  (required time - arrival time)
   Source:                 b[3]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[6]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.750ns  (clk rise@10.750ns - clk rise@0.000ns)
@@ -746,9 +746,9 @@ Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.419ns  (arrival time - required time)
   Source:                 c[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[2]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -800,9 +800,9 @@ Slack (MET) :             0.419ns  (arrival time - required time)
 
 Slack (MET) :             0.555ns  (arrival time - required time)
   Source:                 c[3]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -854,9 +854,9 @@ Slack (MET) :             0.555ns  (arrival time - required time)
 
 Slack (MET) :             0.572ns  (arrival time - required time)
   Source:                 c[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -911,9 +911,9 @@ Slack (MET) :             0.572ns  (arrival time - required time)
 
 Slack (MET) :             0.642ns  (arrival time - required time)
   Source:                 c[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[5]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -968,9 +968,9 @@ Slack (MET) :             0.642ns  (arrival time - required time)
 
 Slack (MET) :             0.809ns  (arrival time - required time)
   Source:                 c[1]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[1]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1022,9 +1022,9 @@ Slack (MET) :             0.809ns  (arrival time - required time)
 
 Slack (MET) :             0.834ns  (arrival time - required time)
   Source:                 c[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[0]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1076,9 +1076,9 @@ Slack (MET) :             0.834ns  (arrival time - required time)
 
 Slack (MET) :             0.838ns  (arrival time - required time)
   Source:                 b[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[7]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1136,9 +1136,9 @@ Slack (MET) :             0.838ns  (arrival time - required time)
 
 Slack (MET) :             0.961ns  (arrival time - required time)
   Source:                 c[0]
-                            (input port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (input port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out_reg[6]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1193,9 +1193,9 @@ Slack (MET) :             0.961ns  (arrival time - required time)
 
 Slack (MET) :             3.059ns  (arrival time - required time)
   Source:                 out_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[2]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Min at Fast Process Corner
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1242,9 +1242,9 @@ Slack (MET) :             3.059ns  (arrival time - required time)
 
 Slack (MET) :             3.068ns  (arrival time - required time)
   Source:                 out_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Destination:            out[3]
-                            (output port clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (output port clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             clk
   Path Type:              Min at Fast Process Corner
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
@@ -1296,7 +1296,7 @@ Slack (MET) :             3.068ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk
-Waveform(ns):       { 0.000 5.375 }
+Waveform(ns):       { 0.000 7.000 }
 Period(ns):         10.750
 Sources:            { clk }
 
@@ -1310,26 +1310,26 @@ Min Period        n/a     FDRE/C   n/a            1.000         10.750      9.75
 Min Period        n/a     FDRE/C   n/a            1.000         10.750      9.750      SLICE_X1Y4     out_reg[5]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.750      9.750      SLICE_X1Y0     out_reg[6]/C
 Min Period        n/a     FDRE/C   n/a            1.000         10.750      9.750      SLICE_X1Y1     out_reg[7]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y3     out_reg[0]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y3     out_reg[0]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y43    out_reg[1]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y43    out_reg[1]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y20    out_reg[2]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y20    out_reg[2]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y19    out_reg[3]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y19    out_reg[3]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y18    out_reg[4]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y18    out_reg[4]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y3     out_reg[0]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y3     out_reg[0]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y43    out_reg[1]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y43    out_reg[1]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y20    out_reg[2]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y20    out_reg[2]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y19    out_reg[3]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y19    out_reg[3]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y18    out_reg[4]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.375       4.875      SLICE_X1Y18    out_reg[4]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y3     out_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y3     out_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y43    out_reg[1]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y43    out_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y20    out_reg[2]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y20    out_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y19    out_reg[3]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y19    out_reg[3]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y18    out_reg[4]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         3.750       3.250      SLICE_X1Y18    out_reg[4]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y3     out_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y3     out_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y43    out_reg[1]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y43    out_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y20    out_reg[2]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y20    out_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y19    out_reg[3]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y19    out_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y18    out_reg[4]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.000       6.500      SLICE_X1Y18    out_reg[4]/C
 
 
 
@@ -1349,7 +1349,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[6]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        6.825ns  (logic 1.456ns (21.336%)  route 5.369ns (78.664%))
@@ -1386,7 +1386,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[7]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        6.776ns  (logic 1.456ns (21.491%)  route 5.320ns (78.509%))
@@ -1423,7 +1423,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[0]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        6.626ns  (logic 1.456ns (21.977%)  route 5.170ns (78.023%))
@@ -1460,7 +1460,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[5]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        6.336ns  (logic 1.456ns (22.982%)  route 4.880ns (77.018%))
@@ -1497,7 +1497,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[4]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        5.776ns  (logic 1.456ns (25.212%)  route 4.320ns (74.788%))
@@ -1534,7 +1534,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[3]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        5.625ns  (logic 1.456ns (25.888%)  route 4.169ns (74.112%))
@@ -1571,7 +1571,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[2]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        5.474ns  (logic 1.456ns (26.601%)  route 4.018ns (73.399%))
@@ -1608,7 +1608,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[1]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
   Data Path Delay:        4.428ns  (logic 1.456ns (32.884%)  route 2.972ns (67.116%))
@@ -1651,7 +1651,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[1]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        1.620ns  (logic 0.224ns (13.840%)  route 1.396ns (86.160%))
@@ -1683,7 +1683,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[2]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.070ns  (logic 0.224ns (10.833%)  route 1.846ns (89.167%))
@@ -1715,7 +1715,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[3]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.134ns  (logic 0.224ns (10.509%)  route 1.910ns (89.491%))
@@ -1747,7 +1747,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[4]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.198ns  (logic 0.224ns (10.204%)  route 1.974ns (89.796%))
@@ -1779,7 +1779,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[5]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.440ns  (logic 0.224ns (9.190%)  route 2.216ns (90.810%))
@@ -1811,7 +1811,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[0]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.563ns  (logic 0.224ns (8.750%)  route 2.339ns (91.250%))
@@ -1843,7 +1843,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[7]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.631ns  (logic 0.224ns (8.524%)  route 2.407ns (91.476%))
@@ -1875,7 +1875,7 @@ Slack:                    inf
   Source:                 reset
                             (input port)
   Destination:            out_reg[6]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.375ns period=10.750ns})
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=10.750ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
   Data Path Delay:        2.636ns  (logic 0.224ns (8.507%)  route 2.412ns (91.493%))

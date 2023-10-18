@@ -124,12 +124,33 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 6  }
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/impl_1/top.dcp
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xc7a35tcpg236-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.cache/wt [current_project]
   set_property parent.project_path /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.xpr [current_project]
   set_property ip_output_repo /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/synth_1/top.dcp
+  read_ip -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/sources_1/ip/vio_0/vio_0.xci
+  add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_down_synth_1/clock_div_count.dcp
+  set_property SCOPED_TO_CELLS count_down [get_files /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_down_synth_1/clock_div_count.dcp]
+  add_files -quiet /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_up_synth_1/clock_div_count.dcp
+  set_property SCOPED_TO_CELLS count_up [get_files /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.runs/clock_div_count_up_synth_1/clock_div_count.dcp]
+OPTRACE "read constraints: implementation" START { }
+  read_xdc /home/kanish/System_Design_through_FPGA/Vivado/pr_demo/pr_demo.srcs/constrs_1/imports/Week14_PR/constraints.xdc
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  link_design -top top -part xc7a35tcpg236-1 -reconfig_partitions {count_down count_up} 
+OPTRACE "link_design" END { }
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -264,7 +285,7 @@ OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_routed.dcp
 OPTRACE "Route Design: write_checkpoint" END { }
 OPTRACE "route_design misc" START { }
-  write_checkpoint -force -cell count_down count_down_clock_div_count_up_routed.dcp
+  write_checkpoint -force -cell count_down count_down_clock_div_count_down_routed.dcp
   write_checkpoint -force -cell count_up count_up_clock_div_count_up_routed.dcp
   close_msg_db -file route_design.pb
 } RESULT]
@@ -290,12 +311,12 @@ set rc [catch {
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   catch { write_mem_info -force -no_partial_mmi top.mmi }
-  catch { write_mem_info -force -cell count_down count_down_clock_div_count_up_partial.mmi }
+  catch { write_mem_info -force -cell count_down count_down_clock_div_count_down_partial.mmi }
   catch { write_mem_info -force -cell count_up count_up_clock_div_count_up_partial.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force -no_partial_bitfile top.bit 
-  write_bitstream -force -cell count_down count_down_clock_div_count_up_partial.bit 
+  write_bitstream -force -cell count_down count_down_clock_div_count_down_partial.bit 
   write_bitstream -force -cell count_up count_up_clock_div_count_up_partial.bit 
 OPTRACE "write_bitstream" END { }
 OPTRACE "write_bitstream misc" START { }
@@ -303,7 +324,7 @@ OPTRACE "read constraints: write_bitstream_post" START { }
 OPTRACE "read constraints: write_bitstream_post" END { }
   catch {write_debug_probes -no_partial_ltxfile -quiet -force top}
   catch {file copy -force top.ltx debug_nets.ltx}
-  catch {write_debug_probes -quiet -force -cell count_down -file count_down_clock_div_count_up_partial.ltx}
+  catch {write_debug_probes -quiet -force -cell count_down -file count_down_clock_div_count_down_partial.ltx}
   catch {write_debug_probes -quiet -force -cell count_up -file count_up_clock_div_count_up_partial.ltx}
   update_design -cell count_down -black_box
   update_design -cell count_up -black_box
